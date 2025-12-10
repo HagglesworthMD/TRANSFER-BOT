@@ -46,8 +46,10 @@ FILES = {
 # Risk Detection: (Action + Context) OR (Urgency + Action) OR (High Importance)
 
 RISK_ACTIONS = [
-    "delete", "remove", "unlink", "purge", "erase", "destroy",
-    "cancel", "void", "nullify", "terminate", "merge", "split"
+    "delete", "deletion", "remove", "unlink", "purge", "erase", "destroy",
+    "cancel", "void", "nullify", "terminate", 
+    "merge", "merging", "merged", "split", "splitting",
+    "combine", "duplicate", "dedupe", "dedup"
 ]
 
 RISK_CONTEXT = [
