@@ -304,12 +304,12 @@ st.markdown("---")
 
 # Calculate health metrics
 total_today = len(df_today)
-active_staff = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].nunique()
-completed_today = len(df_today[df_today['Assigned To'] == 'COMPLETED'])
+active_staff = df_today[df_today['Assigned To'] != 'completed']['Assigned To'].nunique()
+completed_today = len(df_today[df_today['Assigned To'] == 'completed'])
 
 # Calculate balance score
 if total_today > 0:
-    assignment_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts()
+    assignment_data = df_today[df_today['Assigned To'] != 'completed']['Assigned To'].value_counts()
     if len(assignment_data) > 0:
         max_load = assignment_data.max()
         min_load = assignment_data.min()
@@ -468,11 +468,11 @@ with col1:
     st.metric("📬 Requests Today", total_today, delta="+0" if total_today == 0 else f"+{len(df_today.tail(1))}")
 
 with col2:
-    active_staff = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].nunique()
+    active_staff = df_today[df_today['Assigned To'] != 'completed']['Assigned To'].nunique()
     st.metric("👥 Staff Active", active_staff, delta=f"{len(staff_list)} total")
 
 with col3:
-    completed = len(df_today[df_today['Assigned To'] == 'COMPLETED'])
+    completed = len(df_today[df_today['Assigned To'] == 'completed'])
     st.metric("✅ Completed", completed, delta=f"{(completed/total_today*100):.0f}%" if total_today > 0 else "0%")
 
 with col4:
@@ -498,7 +498,7 @@ if not df_today.empty:
         st.markdown("### 📈 Workload Distribution")
         
         # Get assignment counts (excluding staff replies)
-        assignment_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts().reset_index()
+        assignment_data = df_today[df_today['Assigned To'] != 'completed']['Assigned To'].value_counts().reset_index()
         assignment_data.columns = ['Staff', 'Assignments']
         
         # Unique colors for each staff member (vibrant and distinct)
@@ -686,10 +686,10 @@ if not df_today.empty:
         )
     
     # Calculate completion metrics
-    this_week_completed = len(this_week_df[this_week_df['Assigned To'] == 'COMPLETED'])
-    this_week_requests = len(this_week_df[this_week_df['Assigned To'] != 'COMPLETED'])
-    last_week_completed = len(last_week_df[last_week_df['Assigned To'] == 'COMPLETED'])
-    last_week_requests = len(last_week_df[last_week_df['Assigned To'] != 'COMPLETED'])
+    this_week_completed = len(this_week_df[this_week_df['Assigned To'] == 'completed'])
+    this_week_requests = len(this_week_df[this_week_df['Assigned To'] != 'completed'])
+    last_week_completed = len(last_week_df[last_week_df['Assigned To'] == 'completed'])
+    last_week_requests = len(last_week_df[last_week_df['Assigned To'] != 'completed'])
     
     completion_rate_this = (this_week_completed / this_week_requests * 100) if this_week_requests > 0 else 0
     completion_rate_last = (last_week_completed / last_week_requests * 100) if last_week_requests > 0 else 0
@@ -805,7 +805,7 @@ if not df_today.empty:
             subject_short = row['Subject'][:60] + "..." if len(row['Subject']) > 60 else row['Subject']
             assigned = row['Assigned To']
             
-            if assigned == 'COMPLETED':
+            if assigned == 'completed':
                 icon = "✅"
                 color = "#10b981"
                 label_text = "Completed"
@@ -826,7 +826,7 @@ if not df_today.empty:
     with col2:
         st.markdown("### 🏆 Staff Leaderboard")
         
-        leaderboard_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts().head(5)
+        leaderboard_data = df_today[df_today['Assigned To'] != 'completed']['Assigned To'].value_counts().head(5)
         
         medals = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣"]
         for idx, (staff, count) in enumerate(leaderboard_data.items()):
@@ -858,11 +858,11 @@ if not df_today.empty:
     
     # Get all staff members (excluding COMPLETED)
     all_staff = set(staff_list)
-    assigned_staff = set(df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].unique())
+    assigned_staff = set(df_today[df_today['Assigned To'] != 'completed']['Assigned To'].unique())
     all_staff.update(assigned_staff)
     
     # Explicitly remove COMPLETED if it somehow got included
-    all_staff.discard('COMPLETED')
+    all_staff.discard('completed')
     all_staff.discard('staff-reply')
     
     # Calculate KPIs for each staff member
@@ -925,7 +925,7 @@ if not df_today.empty:
             
             with kpi4:
                 # Calculate workload percentage (vs average)
-                avg_per_staff_today = len(df_today[df_today['Assigned To'] != 'COMPLETED']) / len(staff_list) if len(staff_list) > 0 else 0
+                avg_per_staff_today = len(df_today[df_today['Assigned To'] != 'completed']) / len(staff_list) if len(staff_list) > 0 else 0
                 workload_pct = (total_today / avg_per_staff_today * 100) if avg_per_staff_today > 0 else 100
                 
                 if workload_pct > 110:
@@ -1086,8 +1086,8 @@ with col_ext_info:
 # Check if Sender column exists
 if 'Sender' in df.columns:
     # Clean sender data (exclude staff replies from sender analysis)
-    df_with_sender = df[(df['Sender'].notna()) & (df['Sender'] != 'unknown') & (df['Assigned To'] != 'COMPLETED')].copy()
-    df_today_sender = df_today[(df_today['Sender'].notna()) & (df_today['Sender'] != 'unknown') & (df_today['Assigned To'] != 'COMPLETED')].copy()
+    df_with_sender = df[(df['Sender'].notna()) & (df['Sender'] != 'unknown') & (df['Assigned To'] != 'completed')].copy()
+    df_today_sender = df_today[(df_today['Sender'].notna()) & (df_today['Sender'] != 'unknown') & (df_today['Assigned To'] != 'completed')].copy()
     
     if len(df_with_sender) > 0:
         col_src1, col_src2 = st.columns(2)
