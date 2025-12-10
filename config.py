@@ -7,7 +7,7 @@ DEMO_MODE = True
 
 # Enable auto-refresh during demo (for live simulator demo)
 # Set to True to show live updates from demo_simulator.py
-DEMO_AUTO_REFRESH = True
+DEMO_AUTO_REFRESH = False
 
 # When DEMO_MODE is True:
 # - Dashboard shows DEMO MODE indicator (yellow)

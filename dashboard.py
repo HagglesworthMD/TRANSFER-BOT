@@ -677,20 +677,27 @@ if not df_today.empty:
         
         # Unique colors for each staff member (vibrant and distinct)
         staff_colors = {
-            'staff1@example.com': '#667eea',        # Purple
-            'manager@example.com': '#f093fb',      # Pink
-            'staff2@example.com': '#ff6b6b',      # Red (slacker alert!)
-            'staff3@example.com': '#feca57',   # Yellow
-            'staff4@example.com': '#48dbfb',      # Cyan
-            'staff5@example.com': '#ff9ff3', # Hot Pink
-            'staff6@example.com': '#54a0ff',      # Blue
-            'staff7@example.com': '#00d2d3',       # Teal
-            'staff8@example.com': '#5f27cd',     # Deep Purple
-            'staff9@example.com': '#ee5a6f'          # Coral
+            'brian.shaw@sa.gov.au': '#667eea',           # Purple
+            'jason.quinn2@sa.gov.au': '#f093fb',         # Pink (Manager)
+            'john.drousas@sa.gov.au': '#ff6b6b',         # Red
+            'betty.spaghetti@sa.gov.au': '#feca57',      # Yellow
+            'chuck.norris@sa.gov.au': '#48dbfb',         # Cyan
+            'diana.wonderwoman@sa.gov.au': '#ff9ff3',    # Hot Pink
+            'tony.baloney@sa.gov.au': '#54a0ff',         # Blue
+            'frank.beans@sa.gov.au': '#00d2d3',          # Teal
+            'stella.artois@sa.gov.au': '#5f27cd',        # Deep Purple
+            'max.power@sa.gov.au': '#ee5a6f'             # Coral
         }
         
-        # Map colors to staff in the data
-        colors = [staff_colors.get(email, '#888888') for email in assignment_data['Staff']]
+        # Map colors to staff in the data (fallback to cycling through colors)
+        vibrant_colors = ['#667eea', '#f093fb', '#ff6b6b', '#feca57', '#48dbfb', 
+                          '#ff9ff3', '#54a0ff', '#00d2d3', '#5f27cd', '#ee5a6f']
+        colors = []
+        for i, email in enumerate(assignment_data['Staff']):
+            if email in staff_colors:
+                colors.append(staff_colors[email])
+            else:
+                colors.append(vibrant_colors[i % len(vibrant_colors)])
         
         # Create horizontal bar chart with unique colors
         fig = go.Figure()
