@@ -730,7 +730,7 @@ if not df_today.empty:
         # Debug theme (temporary)
         # st.write(f"Debug: Theme={st.session_state.theme}, TextColor={chart_text_color}")
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key="workload_distribution")
     
     with col2:
         st.markdown("### 🎯 System Status")
@@ -826,7 +826,7 @@ if not df_today.empty:
         height=250
     )
     
-    st.plotly_chart(fig_timeline, use_container_width=True)
+    st.plotly_chart(fig_timeline, use_container_width=True, key="hourly_timeline")
     
     # ==================== WEEK-OVER-WEEK COMPARISON ====================
     col_wow_title, col_wow_info = st.columns([6, 1])
@@ -960,7 +960,7 @@ if not df_today.empty:
             height=400
         )
         
-        st.plotly_chart(fig_heatmap, use_container_width=True)
+        st.plotly_chart(fig_heatmap, use_container_width=True, key="activity_heatmap")
         
         # Find peak hour
         if len(heatmap_data) > 0:
@@ -1158,7 +1158,7 @@ if not df_today.empty:
                             height=200
                         )
                         
-                        st.plotly_chart(fig_staff_hourly, use_container_width=True)
+                        st.plotly_chart(fig_staff_hourly, use_container_width=True, key=f"staff_hourly_{staff_email}")
                     else:
                         st.info("No activity today")
                 
@@ -1192,7 +1192,7 @@ if not df_today.empty:
                             height=200
                         )
                         
-                        st.plotly_chart(fig_staff_weekly, use_container_width=True)
+                        st.plotly_chart(fig_staff_weekly, use_container_width=True, key=f"staff_weekly_{staff_email}")
                     else:
                         st.info("No activity this week")
                 
@@ -1250,7 +1250,7 @@ fig_weekly.update_layout(
     height=250
 )
 
-st.plotly_chart(fig_weekly, use_container_width=True)
+st.plotly_chart(fig_weekly, use_container_width=True, key="weekly_trend")
 
 # ==================== EXTERNAL REQUEST SOURCES ====================
 st.markdown("---")
@@ -1309,7 +1309,7 @@ if 'Sender' in df.columns:
                 height=350
             )
             
-            st.plotly_chart(fig_senders, use_container_width=True)
+            st.plotly_chart(fig_senders, use_container_width=True, key="top_senders")
         
         with col_src2:
             st.markdown("#### � Sender Details")
