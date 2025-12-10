@@ -6,23 +6,30 @@ from datetime import datetime, timedelta
 import json
 import os
 
+# ==================== DEMO MODE CONFIG ====================
+try:
+    from config import DEMO_MODE
+except ImportError:
+    DEMO_MODE = False  # Default to live mode if config doesn't exist
+
 # ==================== PAGE CONFIG ====================
 st.set_page_config(
-    page_title="SAMI Transfer Bot - Live Dashboard",
-    page_icon="🚀",
+    page_title="SAMI Transfer Bot - Live Dashboard" if not DEMO_MODE else "SAMI Transfer Bot - DEMO MODE",
+    page_icon="🚀" if not DEMO_MODE else "🎬",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# Auto-refresh every 5 seconds
-import time
-if 'last_refresh' not in st.session_state:
-    st.session_state.last_refresh = time.time()
-
-# Check if 5 seconds have passed
-if time.time() - st.session_state.last_refresh > 5:
-    st.session_state.last_refresh = time.time()
-    st.rerun()
+# Auto-refresh every 5 seconds (ONLY in live mode)
+if not DEMO_MODE:
+    import time
+    if 'last_refresh' not in st.session_state:
+        st.session_state.last_refresh = time.time()
+    
+    # Check if 5 seconds have passed
+    if time.time() - st.session_state.last_refresh > 5:
+        st.session_state.last_refresh = time.time()
+        st.rerun()
 
 # ==================== CUSTOM CSS ====================
 st.markdown("""
@@ -225,14 +232,24 @@ col1, col2, col3 = st.columns([3, 1, 0.5])
 with col1:
     st.markdown("<h1>🚀 SAMI Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
 with col2:
-    st.markdown(f"""
-    <div style='text-align: right; padding-top: 1rem;'>
-        <span class='live-indicator'></span>
-        <span style='color: #10b981; font-weight: 600;'>LIVE</span>
-        <br>
-        <span style='color: #a0aec0; font-size: 0.8rem;'>{datetime.now().strftime('%d %b %Y, %H:%M:%S')}</span>
-    </div>
-    """, unsafe_allow_html=True)
+    if DEMO_MODE:
+        st.markdown(f"""
+        <div style='text-align: right; padding-top: 1rem;'>
+            <span style='display: inline-block; width: 10px; height: 10px; background: #fbbf24; border-radius: 50%; margin-right: 8px;'></span>
+            <span style='color: #fbbf24; font-weight: 600;'>DEMO MODE</span>
+            <br>
+            <span style='color: #a0aec0; font-size: 0.8rem;'>Safe for demonstration</span>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown(f"""
+        <div style='text-align: right; padding-top: 1rem;'>
+            <span class='live-indicator'></span>
+            <span style='color: #10b981; font-weight: 600;'>LIVE</span>
+            <br>
+            <span style='color: #a0aec0; font-size: 0.8rem;'>{datetime.now().strftime('%d %b %Y, %H:%M:%S')}</span>
+        </div>
+        """, unsafe_allow_html=True)
 with col3:
     st.markdown("<div style='padding-top: 1.5rem;'></div>", unsafe_allow_html=True)
     if st.button("🔄", help="Refresh Now", use_container_width=True):
