@@ -2,31 +2,41 @@
 """
 DEMO SIMULATOR - Simulates the bot adding new entries
 Run this alongside the dashboard to show live data updates!
+Reads staff list from staff.txt to match your actual team.
 """
 import csv
 import random
 import time
+import os
 from datetime import datetime
 
-STAFF = [
-    "staff1@example.com",
-    "manager@example.com", 
-    "staff2@example.com",
-    "staff3@example.com",
-    "staff4@example.com",
-    "staff5@example.com",
-    "staff6@example.com",
-    "staff7@example.com",
-    "staff8@example.com",
-    "staff9@example.com"
-]
+def load_staff():
+    """Load staff list from staff.txt"""
+    staff_file = os.path.join(os.path.dirname(__file__), 'staff.txt')
+    try:
+        with open(staff_file, 'r') as f:
+            return [line.strip().lower() for line in f if line.strip() and not line.startswith('#')]
+    except FileNotFoundError:
+        print("⚠️ staff.txt not found, using defaults")
+        return [
+            "brian.shaw@sa.gov.au",
+            "jason.quinn2@sa.gov.au",
+            "john.drousas@sa.gov.au",
+            "betty.spaghetti@sa.gov.au",
+            "chuck.norris@sa.gov.au"
+        ]
+
+# Load staff from file
+STAFF = load_staff()
 
 SENDERS = [
-    "jones.radiology@hospital.com.au",
-    "rah.emergency@example.com",
-    "wch.imaging@example.com",
-    "flinders.imaging@example.com",
-    "mfm.unit@example.com"
+    "jones.radiology@rah.sa.gov.au",
+    "imaging.requests@wch.sa.gov.au",
+    "tqeh.imaging@sa.gov.au",
+    "flinders.radiology@sa.gov.au",
+    "mfm.requests@wch.sa.gov.au",
+    "lyell.mcewin@nalhn.sa.gov.au",
+    "modbury.imaging@nalhn.sa.gov.au"
 ]
 
 REQUESTS = [
@@ -34,7 +44,9 @@ REQUESTS = [
     "MRI Transfer Request", 
     "Ultrasound Transfer",
     "X-Ray Transfer Request",
-    "Cardiac Imaging Transfer"
+    "Cardiac Imaging Transfer",
+    "PET Scan Transfer",
+    "Mammogram Transfer Request"
 ]
 
 # Urgent requests with DELETION/MERGE keywords (high-risk operations)
@@ -48,7 +60,7 @@ URGENT_REQUESTS = [
     "URGENT DELETION - Confidential Study Sent to Wrong Site"
 ]
 
-PATIENTS = ["Smith J", "Brown M", "Wilson S", "Davis T", "Johnson R"]
+PATIENTS = ["Smith J", "Brown M", "Wilson S", "Davis T", "Johnson R", "Lee K", "Patel A", "Garcia M"]
 
 email_count = 0  # Track emails for urgent scheduling
 current_index = 0
@@ -69,10 +81,13 @@ def add_assignment():
     if is_urgent:
         request = random.choice(URGENT_REQUESTS)
         subject = f"🚨 [CRITICAL] [Assigned: {staff}] {request} - Patient: {patient}"
+        risk_level = "critical"
     else:
         request = random.choice(REQUESTS)
         subject = f"[Assigned: {staff}] {request} - Patient: {patient}"
+        risk_level = "normal"
     
+    # Write to CSV with all columns including Risk Level
     with open('daily_stats.csv', 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -80,13 +95,16 @@ def add_assignment():
             now.strftime('%H:%M:%S'),
             subject,
             staff,
-            sender
+            sender,
+            risk_level
         ])
     
+    # Display with friendly name
+    friendly_name = staff.split('@')[0].replace('.', ' ').title()
     if is_urgent:
-        print(f"🚨 CRITICAL REQUEST assigned to {staff.split('@')[0]}")
+        print(f"🚨 CRITICAL REQUEST assigned to {friendly_name}")
     else:
-        print(f"✅ NEW REQUEST assigned to {staff.split('@')[0]}")
+        print(f"✅ NEW REQUEST assigned to {friendly_name}")
     return staff, is_urgent
 
 def add_completion(staff):
@@ -99,16 +117,21 @@ def add_completion(staff):
             now.strftime('%Y-%m-%d'),
             now.strftime('%H:%M:%S'),
             subject,
-            'COMPLETED',
-            staff
+            'completed',
+            staff,
+            'normal'
         ])
     
-    print(f"✓ COMPLETED by {staff.split('@')[0]}")
+    friendly_name = staff.split('@')[0].replace('.', ' ').title()
+    print(f"✓ COMPLETED by {friendly_name}")
 
 if __name__ == "__main__":
     print("=" * 50)
     print("🤖 TRANSFER BOT SIMULATOR")
     print("=" * 50)
+    print(f"Loaded {len(STAFF)} staff members from staff.txt")
+    print("Staff: " + ", ".join([s.split('@')[0].replace('.', ' ').title() for s in STAFF[:5]]) + "...")
+    print()
     print("This simulates the bot processing emails.")
     print("Watch the dashboard update in real-time!")
     print("Press Ctrl+C to stop.\n")
