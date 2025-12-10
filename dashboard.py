@@ -43,12 +43,16 @@ if st.session_state.theme == 'dark':
     card_bg = "rgba(255, 255, 255, 0.05)"
     border_color = "rgba(255, 255, 255, 0.1)"
     hover_bg = "rgba(255, 255, 255, 0.08)"
+    chart_text_color = "white"
+    chart_grid_color = "rgba(255,255,255,0.1)"
 else:  # light mode
     bg_gradient = "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)"
     text_color = "#1a202c"
     card_bg = "rgba(255, 255, 255, 0.9)"
     border_color = "rgba(0, 0, 0, 0.1)"
     hover_bg = "rgba(0, 0, 0, 0.05)"
+    chart_text_color = "#1a202c"
+    chart_grid_color = "rgba(0,0,0,0.1)"
 
 st.markdown(f"""
 <style>
@@ -531,8 +535,8 @@ if not df_today.empty:
         fig.update_layout(
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='white'),
-            xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)'),
+            font=dict(color=chart_text_color),
+            xaxis=dict(showgrid=True, gridcolor=chart_grid_color),
             yaxis=dict(showgrid=False),
             margin=dict(l=0, r=0, t=0, b=0),
             height=300
@@ -616,15 +620,15 @@ if not df_today.empty:
     fig_timeline.update_layout(
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
-        font=dict(color='white'),
+        font=dict(color=chart_text_color),
         xaxis=dict(
             showgrid=True,
-            gridcolor='rgba(255,255,255,0.1)',
+            gridcolor=chart_grid_color,
             title="Time of Day"
         ),
         yaxis=dict(
             showgrid=True,
-            gridcolor='rgba(255,255,255,0.1)',
+            gridcolor=chart_grid_color,
             title="Requests"
         ),
         margin=dict(l=0, r=0, t=0, b=0),
@@ -747,7 +751,7 @@ if not df_today.empty:
         fig_heatmap.update_layout(
             plot_bgcolor='rgba(0,0,0,0)',
             paper_bgcolor='rgba(0,0,0,0)',
-            font=dict(color='white'),
+            font=dict(color=chart_text_color),
             xaxis=dict(title="Day of Week", side="bottom"),
             yaxis=dict(title="Time of Day"),
             margin=dict(l=0, r=0, t=0, b=0),
@@ -945,9 +949,9 @@ if not df_today.empty:
                         fig_staff_hourly.update_layout(
                             plot_bgcolor='rgba(0,0,0,0)',
                             paper_bgcolor='rgba(0,0,0,0)',
-                            font=dict(color='white', size=10),
+                            font=dict(color=chart_text_color, size=10),
                             xaxis=dict(showgrid=False, title="Hour"),
-                            yaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Requests"),
+                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Requests"),
                             margin=dict(l=0, r=0, t=0, b=0),
                             height=200
                         )
@@ -979,9 +983,9 @@ if not df_today.empty:
                         fig_staff_weekly.update_layout(
                             plot_bgcolor='rgba(0,0,0,0)',
                             paper_bgcolor='rgba(0,0,0,0)',
-                            font=dict(color='white', size=10),
+                            font=dict(color=chart_text_color, size=10),
                             xaxis=dict(showgrid=False, title="Date"),
-                            yaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Requests"),
+                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Requests"),
                             margin=dict(l=0, r=0, t=0, b=0),
                             height=200
                         )
@@ -1028,9 +1032,9 @@ fig_weekly.add_trace(go.Bar(
 fig_weekly.update_layout(
     plot_bgcolor='rgba(0,0,0,0)',
     paper_bgcolor='rgba(0,0,0,0)',
-    font=dict(color='white'),
+    font=dict(color=chart_text_color),
     xaxis=dict(showgrid=False, title="Date"),
-    yaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Requests"),
+    yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Requests"),
     margin=dict(l=0, r=0, t=0, b=0),
     height=250
 )
@@ -1079,8 +1083,8 @@ if 'Sender' in df.columns:
             fig_senders.update_layout(
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
-                font=dict(color='white', size=10),
-                xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Total Requests"),
+                font=dict(color=chart_text_color, size=10),
+                xaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Total Requests"),
                 yaxis=dict(showgrid=False),
                 margin=dict(l=0, r=0, t=0, b=0),
                 height=350
