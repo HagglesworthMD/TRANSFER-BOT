@@ -14,7 +14,7 @@ except ImportError:
 
 # ==================== PAGE CONFIG ====================
 st.set_page_config(
-    page_title="SAMI Transfer Bot - Live Dashboard" if not DEMO_MODE else "SAMI Transfer Bot - DEMO MODE",
+    page_title="Helpdesk Transfer Bot - Live Dashboard" if not DEMO_MODE else "Helpdesk Transfer Bot - DEMO MODE",
     page_icon="🚀" if not DEMO_MODE else "🎬",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -256,7 +256,7 @@ def load_data():
 # ==================== HEADER ====================
 col1, col2, col3, col4 = st.columns([3, 1, 0.4, 0.4])
 with col1:
-    st.markdown("<h1>🚀 SAMI Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
+    st.markdown("<h1>🚀 Helpdesk Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
 with col2:
     if DEMO_MODE:
         st.markdown(f"""
@@ -291,13 +291,21 @@ with col4:
 # ==================== LOAD DATA ====================
 df, roster_state, staff_list = load_data()
 
+# Handle missing data gracefully - don't stop, show what we have
 if df is None:
-    st.error("⚠️ **System not initialized yet.** Waiting for first email to be processed...")
-    st.stop()
+    # Create empty dataframe with expected columns
+    df = pd.DataFrame(columns=['Date', 'Time', 'Subject', 'Assigned To', 'Sender', 'Risk Level'])
+    st.info("📭 **No data yet.** Start the bot or simulator to see live metrics.")
+
+if roster_state is None:
+    roster_state = {"current_index": 0, "total_processed": 0}
+
+if staff_list is None:
+    staff_list = []
 
 # ==================== TODAY'S DATA ====================
 today = datetime.now().strftime('%Y-%m-%d')
-df_today = df[df['Date'] == today].copy()
+df_today = df[df['Date'] == today].copy() if len(df) > 0 else df.copy()
 
 # ==================== CLINICAL CONTROL TOWER ====================
 st.markdown("---")
@@ -566,7 +574,7 @@ with col_export2:
     st.download_button(
         label="📥 Export Full Data (CSV)",
         data=csv_data,
-        file_name=f"sami_transfer_bot_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
+        file_name=f"helpdesk_transfer_bot_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
         mime="text/csv",
         use_container_width=True,
         help="Download complete dataset for external analysis"
@@ -574,8 +582,8 @@ with col_export2:
 
 # ==================== SHAME JOHN BUTTON (Easter Egg) ====================
 # Show button if workload is imbalanced and John exists in staff
-if balance_score < 70 and 'john.drousas@sa.gov.au' in staff_list:
-    john_assignments = len(df_today[df_today['Assigned To'] == 'john.drousas@sa.gov.au'])
+if balance_score < 70 and 'staff2@example.com' in staff_list:
+    john_assignments = len(df_today[df_today['Assigned To'] == 'staff2@example.com'])
     avg_assignments = total_today / len(staff_list) if len(staff_list) > 0 else 0
     
     if john_assignments < avg_assignments * 0.5:  # John is doing less than half the average
@@ -584,7 +592,7 @@ if balance_score < 70 and 'john.drousas@sa.gov.au' in staff_list:
         with col_shame2:
             import urllib.parse
             
-            chuck_count = len(df_today[df_today['Assigned To'] == 'chuck.norris@sa.gov.au'])
+            chuck_count = len(df_today[df_today['Assigned To'] == 'staff4@example.com'])
             email_subject = "RE: Your Outstanding Workload Performance"
             email_body = f"""Hi John,
 
@@ -607,7 +615,7 @@ The Dashboard That Never Sleeps
 P.S. Chuck Norris has done {chuck_count} requests today. Just saying.
 """
             # Properly encode the mailto URL
-            mailto_link = f"mailto:john.drousas@sa.gov.au?subject={urllib.parse.quote(email_subject)}&body={urllib.parse.quote(email_body)}"
+            mailto_link = f"mailto:staff2@example.com?subject={urllib.parse.quote(email_subject)}&body={urllib.parse.quote(email_body)}"
             
             if st.button("📧 Email John", use_container_width=True, type="primary"):
                 st.markdown(f'<meta http-equiv="refresh" content="0;url={mailto_link}">', unsafe_allow_html=True)
@@ -659,16 +667,16 @@ if not df_today.empty:
         
         # Unique colors for each staff member (vibrant and distinct)
         staff_colors = {
-            'brian.shaw@sa.gov.au': '#667eea',        # Purple
-            'jason.quinn2@sa.gov.au': '#f093fb',      # Pink
-            'john.drousas@sa.gov.au': '#ff6b6b',      # Red (slacker alert!)
-            'betty.spaghetti@sa.gov.au': '#feca57',   # Yellow
-            'chuck.norris@sa.gov.au': '#48dbfb',      # Cyan
-            'diana.wonderwoman@sa.gov.au': '#ff9ff3', # Hot Pink
-            'tony.baloney@sa.gov.au': '#54a0ff',      # Blue
-            'frank.beans@sa.gov.au': '#00d2d3',       # Teal
-            'stella.artois@sa.gov.au': '#5f27cd',     # Deep Purple
-            'max.power@sa.gov.au': '#ee5a6f'          # Coral
+            'staff1@example.com': '#667eea',        # Purple
+            'manager@example.com': '#f093fb',      # Pink
+            'staff2@example.com': '#ff6b6b',      # Red (slacker alert!)
+            'staff3@example.com': '#feca57',   # Yellow
+            'staff4@example.com': '#48dbfb',      # Cyan
+            'staff5@example.com': '#ff9ff3', # Hot Pink
+            'staff6@example.com': '#54a0ff',      # Blue
+            'staff7@example.com': '#00d2d3',       # Teal
+            'staff8@example.com': '#5f27cd',     # Deep Purple
+            'staff9@example.com': '#ee5a6f'          # Coral
         }
         
         # Map colors to staff in the data
