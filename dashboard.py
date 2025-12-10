@@ -21,16 +21,12 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Auto-refresh every 5 seconds (in live mode OR demo with auto-refresh enabled)
+# Auto-refresh every 5 seconds using HTML meta refresh (reliable method)
 if not DEMO_MODE or DEMO_AUTO_REFRESH:
-    import time
-    if 'last_refresh' not in st.session_state:
-        st.session_state.last_refresh = time.time()
-    
-    # Check if 5 seconds have passed
-    if time.time() - st.session_state.last_refresh > 5:
-        st.session_state.last_refresh = time.time()
-        st.rerun()
+    st.markdown(
+        '<meta http-equiv="refresh" content="5">',
+        unsafe_allow_html=True
+    )
 
 
 # ==================== THEME TOGGLE ====================
