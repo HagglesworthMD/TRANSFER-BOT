@@ -1,136 +1,127 @@
 # 📋 Changelog
 
-All notable changes to the Helpdesk Transfer Bot project are documented in this file.
+All notable changes to the SAMI Transfer Bot project.
 
 ---
 
-## [2.1.0] - 2025-12-10
+## [2.2.0] - 2025-12-11 🏥 Clinical Safety Release
 
-### 🛡️ Critical Fix: Smart Filter Logic
-**Problem Solved:** Staff emails were being blindly archived, causing lost tickets when staff logged their own issues.
+### 🚨 NEW: Risk-Aware Urgent Filter
 
-#### Added
-- **Smart Filter** - Intelligent email classification that distinguishes between:
-  - Staff replies to existing tickets (archived)
-  - Staff's own genuine tickets (assigned via round-robin)
-- Reply detection patterns: `RE:`, `Accepted:`, `Declined:`, `FW:`, `FWD:`
-- Bot tag detection: `[Assigned:`, `[COMPLETED:`
-- New log message: `⏩ Skipped internal reply from {email}`
-- New log message: `📨 Staff member {email} submitted NEW ticket`
-- `SMART_FILTER_WORKFLOW.md` - Full documentation for manager presentation
+**The Problem:** Critical requests (deletions, STAT cases) were being treated the same as routine transfers.
 
-#### Changed
-- `distributor.py` - Complete refactor of email filtering logic
-- Completion marker changed from `STAFF-REPLY` to `completed` (lowercase)
+**The Solution:** Semantic risk detection with SLA enforcement.
 
----
+#### Urgent Filter Workflow:
+```
+INCOMING EMAIL
+      │
+      ▼
+┌─────────────────────────┐
+│  SEMANTIC RISK CHECK    │
+│  • Contains "delete"?   │
+│  • Contains "patient"?  │
+│  • Marked URGENT?       │
+└─────────────────────────┘
+      │
+      ├── CRITICAL ──▶ 🚨 20-min SLA timer starts
+      │                   └── If breached: Re-assign + Escalate to Manager
+      │
+      ├── URGENT ────▶ ⚠️ Flagged in dashboard
+      │
+      └── NORMAL ────▶ ✅ Standard round-robin
+```
 
-## [2.0.0] - 2025-12-10
+#### Risk Detection Rules:
+| Condition | Risk Level |
+|-----------|------------|
+| Action + Context (e.g., "delete patient scan") | 🚨 CRITICAL |
+| Urgency + Action (e.g., "STAT delete") | 🚨 CRITICAL |
+| Outlook High Importance Flag | 🚨 CRITICAL |
+| Urgency word alone (e.g., "ASAP") | ⚠️ URGENT |
+| Normal request | ✅ NORMAL |
 
-### 🎨 Dashboard Overhaul
-
-#### Added
-- **Raw Data Viewer** - Live view of CSV data with filtering options
-  - Filter by Type (All/Assignments/Completions)
-  - Filter by Date
-  - Filter by Staff member
-  - Download filtered data as CSV
-  - Green highlighting for completed entries
-- **Demo Simulator** (`demo_simulator.py`) - Simulates bot activity for live demos
-  - Adds fake entries every 3-8 seconds
-  - Round-robin staff assignment
-  - Random completions
-- **Email John Button** - Humorous Easter egg for demos
-  - Appears when workload imbalance detected
-  - Opens email client with sarcastic pre-written message
-- **Info Buttons** - Contextual help for each chart section
-- **Theme Toggle** - Dark/Light mode support
-- **Completion Rate Tracking** - Week-over-week performance metrics
-
-#### Changed
-- Chart colors now adapt to theme (dark text in light mode, white in dark mode)
-- Axis labels use proper Plotly API (`title=dict(text=..., font=...)`)
-- Total Processed reads from correct JSON key (`total_processed`)
-- All staff emails normalized to lowercase for consistency
-
-#### Fixed
-- `ValueError: Invalid property 'titlefont'` - Updated to modern Plotly API
-- Invisible chart text in light mode
-- Completion rate showing 0% (case sensitivity issue)
-- Round-robin index reading from wrong JSON key
+#### New Dashboard: Clinical Control Tower
+- **Green Banner:** System Normal - no urgent tickets
+- **Yellow Banner:** Active risks being monitored
+- **Red Banner:** SLA BREACH - ticket exceeded 20 minutes!
 
 ---
 
-## [1.5.0] - 2025-12-09
+## [2.1.0] - 2025-12-10 🛡️ Smart Filter
 
-### 📊 Analytics Expansion
+### Fixed: Single Point of Failure
+**Problem:** Staff emails were blindly archived, losing tickets when staff logged their own issues.
 
-#### Added
-- **Week-over-Week Performance** section with metrics
-- **Peak Hours Heatmap** - Visual request volume by day/hour
-- **Hourly Activity Trend** - Line chart showing daily patterns
-- **7-Day Trend Analysis** - Historical bar chart
-- **External Request Sources** - Top senders analysis
-- **Staff Leaderboard** - Top performers for the day
-- **Individual Staff Drill-down** - Expandable stats per person
+**Solution:** Smart Filter only archives if:
+- Sender IS in staff.txt AND
+- Subject starts with "RE:", "Accepted:", "Declined:" OR contains "[Assigned:"
 
-#### Changed
-- Time format now displays as `HH:00` for clarity
-- Removed STAFF-REPLY from all staff visualizations
+Staff sending NEW emails are now treated as customers!
 
 ---
 
-## [1.0.0] - 2025-12-08
+## [2.0.0] - 2025-12-10 📊 Dashboard Overhaul
 
-### 🚀 Initial Release
+### Added
+- Raw Data Viewer with filtering
+- Demo Simulator for live demonstrations
+- Email John Button (Easter egg)
+- Info buttons for each chart
+- Dark/Light mode toggle
+- Completion rate tracking
+- 3 weeks of historical data
 
-#### Added
-- **Round-Robin Email Dispatcher** (`distributor.py`)
-  - Connects to Outlook shared mailbox
-  - Fair distribution across team members
-  - Automatic email forwarding with assignment tags
-  - Completion tracking via staff replies
-- **Live Dashboard** (`dashboard.py`)
-  - Real-time metrics with auto-refresh
-  - Workload distribution chart
-  - Executive summary section
-  - Activity feed
-- **Configuration Files**
-  - `staff.txt` - Team member list
-  - `roster_state.json` - Round-robin state
-  - `daily_stats.csv` - Activity log
-- **Documentation**
-  - `README.md` - Project overview
-  - `WINDOWS_SETUP.md` - Installation guide
-  - `HOW_TO_RUN.md` - Quick start instructions
+### Fixed
+- Chart visibility in light mode
+- Theme-aware colors
+- Completion rate showing 0%
+
+---
+
+## [1.0.0] - 2025-12-08 🚀 Initial Release
+
+### Core Features
+- Round-robin email distribution
+- Outlook shared mailbox integration
+- Real-time Streamlit dashboard
+- Staff workload balancing
+- Daily stats CSV logging
+
+---
+
+## How Metrics Are Calculated
+
+### Response Time Tracking:
+```
+1. EMAIL ARRIVES
+   └── Bot logs: [Assigned: staff@] + TIMESTAMP
+   
+2. STAFF REPLIES (CC's shared inbox)
+   └── Bot logs: [COMPLETED: staff@] + TIMESTAMP
+   
+3. DASHBOARD CALCULATES
+   └── Response Time = COMPLETED timestamp - ASSIGNED timestamp
+   └── Completion Rate = COMPLETED count / ASSIGNED count × 100
+```
+
+### The CSV Contains:
+```csv
+Date,Time,Subject,Assigned To,Sender,Risk Level
+2025-12-11,08:30:00,[Assigned: chuck.norris@...],chuck.norris@sa.gov.au,sender@...,normal
+2025-12-11,09:15:00,[COMPLETED: chuck.norris@...],completed,chuck.norris@sa.gov.au,normal
+```
 
 ---
 
 ## File Structure
-
 ```
 TRANSFER BOT/
-├── distributor.py          # Main bot script (Outlook integration)
-├── dashboard.py            # Streamlit analytics dashboard
-├── demo_simulator.py       # Demo mode simulator
-├── staff.txt               # Team member list
-├── roster_state.json       # Round-robin state
-├── daily_stats.csv         # Activity log (auto-generated)
-├── config.py               # Configuration settings
-├── requirements.txt        # Python dependencies
-├── CHANGELOG.md            # This file
-├── README.md               # Project overview
-├── SMART_FILTER_WORKFLOW.md # Smart filter documentation
-├── WINDOWS_SETUP.md        # Windows installation guide
-├── HOW_TO_RUN.md           # Quick start guide
-├── START_BOT.bat           # Windows launcher (bot)
-├── START_DEMO.bat          # Windows launcher (demo mode)
-└── START_EVERYTHING.bat    # Launch all components
+├── distributor.py      # V2.2 Clinical Safety Bot
+├── dashboard.py        # Live dashboard with Control Tower
+├── demo_simulator.py   # Demo mode (no Outlook needed)
+├── daily_stats.csv     # All activity logs
+├── urgent_watchdog.json # SLA tracking
+├── staff.txt           # Team members
+└── roster_state.json   # Round-robin state
 ```
-
----
-
-## Contributors
-
-- **Helpdesk Support Team** - Requirements & Testing
-- **Automated via AI Assistant** - Development & Documentation

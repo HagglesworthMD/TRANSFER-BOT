@@ -1,24 +1,47 @@
-# 🤖 Helpdesk Transfer Bot
+# 🤖 SAMI Transfer Bot
 
-**Automated Round-Robin Email Dispatcher with Real-Time Analytics Dashboard**
+**Risk-Aware Clinical Email Dispatcher with Real-Time Analytics**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B.svg)](https://streamlit.io)
-[![License](https://img.shields.io/badge/License-Internal-green.svg)]()
+[![Version](https://img.shields.io/badge/Version-2.2.0-green.svg)]()
+[![Clinical](https://img.shields.io/badge/Clinical-Safety-red.svg)]()
+
+---
+
+## 🚨 NEW in V2.2: Urgent Filter & SLA Enforcement
+
+```
+INCOMING EMAIL
+      │
+      ▼
+┌─────────────────────────┐
+│  SEMANTIC RISK CHECK    │
+│  "delete" + "patient"?  │────▶ 🚨 CRITICAL (20-min SLA)
+│  "STAT" + "delete"?     │
+│  High Importance Flag?  │
+└─────────────────────────┘
+      │
+      └── Normal ──────────▶ ✅ Standard round-robin
+```
+
+**Risk Detection:** Bot analyzes email content for dangerous combinations like "delete patient scan" or "STAT request" and enforces a 20-minute SLA with automatic escalation.
 
 ---
 
 ## 🎯 What It Does
 
-The Helpdesk Transfer Bot automatically distributes incoming emails from a shared Outlook mailbox to team members using a **fair round-robin algorithm**, then provides real-time analytics via a beautiful dashboard.
+The SAMI Transfer Bot automatically distributes incoming emails from a shared Outlook mailbox to team members using a **fair round-robin algorithm**, with **clinical risk detection** and real-time analytics.
 
 ### Key Features
 
 | Feature | Description |
 |---------|-------------|
 | ⚖️ **Fair Distribution** | Round-robin ensures equal workload across all team members |
+| 🚨 **Risk Detection** | Semantic analysis flags deletions, urgent cases, critical requests |
+| ⏱️ **SLA Enforcement** | 20-minute timer on critical tickets with auto-escalation |
 | 📧 **Outlook Integration** | Monitors shared mailbox, forwards & tags emails automatically |
-| 📊 **Live Dashboard** | Real-time metrics, charts, and team analytics |
+| 📊 **Live Dashboard** | Real-time metrics, charts, and Clinical Control Tower |
 | 🛡️ **Smart Filter** | Distinguishes staff replies from new tickets (no lost tickets!) |
 | 🌓 **Dark/Light Mode** | Theme toggle for presenter preference |
 | 📥 **Data Export** | Download filtered data as CSV |
