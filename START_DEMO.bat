@@ -6,10 +6,6 @@ echo ========================================
 echo    SAMI TRANSFER BOT - DEMO MODE
 echo ========================================
 echo.
-echo Activating virtual environment...
-call venv\Scripts\activate.bat
-
-echo.
 echo Starting dashboard in DEMO MODE...
 echo.
 echo Features:
@@ -25,6 +21,6 @@ echo.
 echo ========================================
 echo.
 
-streamlit run dashboard.py
+venv\Scripts\python.exe -m streamlit run dashboard.py
 
 pause

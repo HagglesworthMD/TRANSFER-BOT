@@ -7,10 +7,6 @@ echo ================================================
 echo    SAMI TRANSFER BOT - STARTING ALL SYSTEMS
 echo ================================================
 echo.
-echo Activating virtual environment...
-call venv\Scripts\activate.bat
-
-echo.
 echo [1/2] Opening Dashboard in browser...
 start http://localhost:8502
 timeout /t 2 /nobreak >nul
@@ -24,6 +20,6 @@ echo Press Ctrl+C to stop the bot
 echo ------------------------------------------------
 echo.
 
-python distributor.py
+venv\Scripts\python.exe distributor.py
 
 pause
