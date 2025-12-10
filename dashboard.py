@@ -420,6 +420,9 @@ if balance_score < 70 and 'john.drousas@sa.gov.au' in staff_list:
         st.markdown("---")
         col_shame1, col_shame2, col_shame3 = st.columns([1, 1, 1])
         with col_shame2:
+            import urllib.parse
+            
+            chuck_count = len(df_today[df_today['Assigned To'] == 'chuck.norris@sa.gov.au'])
             email_subject = "RE: Your Outstanding Workload Performance"
             email_body = f"""Hi John,
 
@@ -430,38 +433,24 @@ I couldn't help but notice that while the rest of the team is crushing it with a
 That's {(john_assignments/avg_assignments*100):.0f}% of the team average! Impressive dedication to work-life balance! 🏖️
 
 Perhaps we could discuss:
-- Your secret productivity techniques (napping strategies?)
-- Whether you've discovered time travel (backwards only?)
-- If your keyboard is broken (just the work-related keys?)
+  • Your secret productivity techniques (napping strategies?)
+  • Whether you've discovered time travel (backwards only?)
+  • If your keyboard is broken (just the work-related keys?)
 
 Looking forward to your response... whenever you get around to it! 😉
 
 Best regards,
 The Dashboard That Never Sleeps
 
-P.S. Chuck Norris has done {len(df_today[df_today['Assigned To'] == 'chuck.norris@sa.gov.au'])} requests today. Just saying.
+P.S. Chuck Norris has done {chuck_count} requests today. Just saying.
 """
-            mailto_link = f"mailto:john.drousas@sa.gov.au?subject={email_subject.replace(' ', '%20')}&body={email_body.replace(' ', '%20').replace('\\n', '%0A')}"
+            # Properly encode the mailto URL
+            mailto_link = f"mailto:john.drousas@sa.gov.au?subject={urllib.parse.quote(email_subject)}&body={urllib.parse.quote(email_body)}"
             
-            st.markdown(f"""
-                <a href="{mailto_link}" target="_blank">
-                    <button style="
-                        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
-                        color: white;
-                        border: none;
-                        padding: 12px 24px;
-                        border-radius: 8px;
-                        font-weight: 600;
-                        font-size: 1rem;
-                        cursor: pointer;
-                        width: 100%;
-                        box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
-                        transition: all 0.3s ease;
-                    ">
-                        🔔 Email John (He's Slacking!)
-                    </button>
-                </a>
-            """, unsafe_allow_html=True)
+            if st.button("🔔 Email John (He's Slacking!)", use_container_width=True, type="primary"):
+                st.markdown(f'<meta http-equiv="refresh" content="0;url={mailto_link}">', unsafe_allow_html=True)
+                st.success("📧 Opening email client...")
+            
             st.caption("⚠️ Warning: May cause office laughter")
 
 st.markdown("---")
