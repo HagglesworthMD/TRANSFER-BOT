@@ -1,4 +1,4 @@
-# SAMI Clinical Safety Bot v2.2
+# Helpdesk Clinical Safety Bot v2.2
 # Core Dependencies
 
 # Dashboard

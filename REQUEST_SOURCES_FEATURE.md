@@ -105,7 +105,7 @@ Once the bot has been running with sender tracking:
 
 📊 Top Request Sources (All Time)
   jones.radiology@hospital.com.au  ████████ 15
-  central.imaging@sa.gov.au        ██████ 10
+  central.imaging@example.com        ██████ 10
   patient.services@clinic.au       ████ 7
 
 📈 Request Volume by Source (Today)
@@ -131,4 +131,4 @@ Once the bot has been running with sender tracking:
 
 ---
 
-**Made with ❤️ for SAMI Support Team**
+**Made with ❤️ for Helpdesk Support Team**

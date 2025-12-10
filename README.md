@@ -1,4 +1,4 @@
-# 🤖 SAMI Transfer Bot
+# 🤖 Helpdesk Transfer Bot
 
 **Automated Round-Robin Email Dispatcher with Real-Time Analytics Dashboard**
 
@@ -10,7 +10,7 @@
 
 ## 🎯 What It Does
 
-The SAMI Transfer Bot automatically distributes incoming emails from a shared Outlook mailbox to team members using a **fair round-robin algorithm**, then provides real-time analytics via a beautiful dashboard.
+The Helpdesk Transfer Bot automatically distributes incoming emails from a shared Outlook mailbox to team members using a **fair round-robin algorithm**, then provides real-time analytics via a beautiful dashboard.
 
 ### Key Features
 
@@ -125,14 +125,14 @@ TRANSFER BOT/
 ### staff.txt
 Add one email per line:
 ```
-brian.shaw@sa.gov.au
-jason.quinn2@sa.gov.au
-john.drousas@sa.gov.au
+staff1@example.com
+manager@example.com
+staff2@example.com
 ```
 
 ### distributor.py
 ```python
-LIVE_MAILBOX_NAME = "Health:SAMISupportTeam"  # Shared mailbox name
+LIVE_MAILBOX_NAME = "Health:HelpdeskSupportTeam"  # Shared mailbox name
 LIVE_PROCESSED_FOLDER = "Done"                 # Folder for processed emails
 ```
 
@@ -189,10 +189,10 @@ See [SMART_FILTER_WORKFLOW.md](SMART_FILTER_WORKFLOW.md) for full details.
 ## 🔄 How Round-Robin Works
 
 ```
-Email 1 → brian.shaw
-Email 2 → jason.quinn2
-Email 3 → john.drousas
-Email 4 → brian.shaw  (cycle repeats)
+Email 1 → staff1
+Email 2 → manager
+Email 3 → staff2
+Email 4 → staff1  (cycle repeats)
 ...
 ```
 
@@ -216,10 +216,10 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## 🤝 Contributing
 
-This is an internal tool for SA Health SAMI Support Team.
+This is an internal tool for Organization Helpdesk Support Team.
 
 ---
 
 ## 📄 License
 
-Internal use only. © 2025 SA Health
+Internal use only. © 2025 Organization

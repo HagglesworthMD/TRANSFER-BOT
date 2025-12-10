@@ -1,5 +1,5 @@
 """
-SAMI Clinical Safety Bot v2.2
+Helpdesk Clinical Safety Bot v2.2
 Risk-Aware Clinical Dispatcher with SLA Watchdog
 
 Features:
@@ -28,8 +28,8 @@ except ImportError:
 
 # ==================== CONFIGURATION ====================
 CONFIG = {
-    "mailbox": "Health:SAMISupportTeam",
-    "manager": "jason.quinn2@sa.gov.au",
+    "mailbox": "Health:HelpdeskSupportTeam",
+    "manager": "manager@example.com",
     "sla_minutes": 20,
     "check_interval_seconds": 60,
     "processed_folder": "Done"
@@ -452,7 +452,7 @@ def run_job():
 # ==================== MAIN ENTRY POINT ====================
 if __name__ == "__main__":
     log("=" * 60)
-    log("🏥 SAMI Clinical Safety Bot v2.2")
+    log("🏥 Helpdesk Clinical Safety Bot v2.2")
     log("=" * 60)
     log(f"Mailbox: {CONFIG['mailbox']}")
     log(f"Manager: {CONFIG['manager']}")

@@ -1,5 +1,5 @@
 ╔═══════════════════════════════════════════════════════════════════╗
-║         SAMI TRANSFER BOT - MANAGER'S CHEAT SHEET                ║
+║         Helpdesk TRANSFER BOT - MANAGER'S CHEAT SHEET                ║
 ╚═══════════════════════════════════════════════════════════════════╝
 
 📱 QUICK ACCESS
@@ -134,5 +134,5 @@ Core scripts:
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Made with ❤️  for SAMI Support Team | Questions? Check README.md
+Made with ❤️  for Helpdesk Support Team | Questions? Check README.md
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

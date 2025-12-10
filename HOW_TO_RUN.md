@@ -78,7 +78,7 @@ ps aux | grep distributor.py
 ## What Each Component Does
 
 ### **1. Distributor Bot** (`distributor.py`)
-- **Monitors** the SAMI mailbox
+- **Monitors** the Helpdesk mailbox
 - **Assigns** emails to staff in round-robin
 - **Logs** all activity to `daily_stats.csv`
 - **Runs continuously** - needs to stay running
@@ -123,7 +123,7 @@ python distributor.py
 
 ### **Bot not processing emails?**
 - Check Outlook is open
-- Check SAMI mailbox is accessible
+- Check Helpdesk mailbox is accessible
 - Check `staff.txt` has email addresses
 - Look at console output for errors
 

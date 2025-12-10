@@ -1,6 +1,6 @@
 # 🏗️ System Architecture & Logic
 
-A lightweight, easy-to-follow guide to how the SAMI Transfer Bot works.
+A lightweight, easy-to-follow guide to how the Helpdesk Transfer Bot works.
 
 ---
 
@@ -9,7 +9,7 @@ A lightweight, easy-to-follow guide to how the SAMI Transfer Bot works.
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                              INCOMING EMAIL                                  │
-│                    (Shared Mailbox: Health:SAMISupportTeam)                 │
+│                    (Shared Mailbox: Health:HelpdeskSupportTeam)                 │
 └─────────────────────────────────────────────────────────────────────────────┘
                                       │
                                       ▼
@@ -78,19 +78,19 @@ Email 5  →  Person B
 
 ```python
 # staff.txt contains:
-# brian.shaw@sa.gov.au     (index 0)
-# jason.quinn2@sa.gov.au   (index 1)
-# john.drousas@sa.gov.au   (index 2)
+# staff1@example.com     (index 0)
+# manager@example.com   (index 1)
+# staff2@example.com   (index 2)
 
 def get_next_staff():
     # 1. Load the staff list
-    staff = ["brian.shaw@", "jason.quinn2@", "john.drousas@"]
+    staff = ["staff1@", "manager@", "staff2@"]
     
     # 2. Get the current position (stored in roster_state.json)
     current_index = load_from_json()  # e.g., 5
     
     # 3. Use MODULO to wrap around
-    # 5 % 3 = 2, so person at index 2 = john.drousas
+    # 5 % 3 = 2, so person at index 2 = staff2
     next_person = staff[current_index % len(staff)]
     
     # 4. Increment and save for next time
@@ -132,7 +132,7 @@ This system is **deliberately simple** - no databases, no user accounts, no pass
 **To add someone:**
 ```
 # Just add their email to staff.txt
-echo "new.person@sa.gov.au" >> staff.txt
+echo "new.person@example.com" >> staff.txt
 ```
 
 **To remove someone:**
@@ -254,7 +254,7 @@ chmod 644 daily_stats.csv    # Bot write, dashboard read
 | Setting | File | Example |
 |---------|------|---------|
 | Staff list | `staff.txt` | One email per line |
-| Mailbox name | `distributor.py` | `"Health:SAMISupportTeam"` |
+| Mailbox name | `distributor.py` | `"Health:HelpdeskSupportTeam"` |
 | Processed folder | `distributor.py` | `"Done"` |
 | Check interval | `distributor.py` | `1 minute` |
 | Dashboard refresh | `dashboard.py` | `5 seconds` |

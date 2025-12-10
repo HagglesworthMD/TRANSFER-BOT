@@ -14,7 +14,7 @@ except ImportError:
 
 # ==================== PAGE CONFIG ====================
 st.set_page_config(
-    page_title="Helpdesk Transfer Bot - Live Dashboard" if not DEMO_MODE else "Helpdesk Transfer Bot - DEMO MODE",
+    page_title="SAMI Transfer Bot - Live Dashboard" if not DEMO_MODE else "SAMI Transfer Bot - DEMO MODE",
     page_icon="🚀" if not DEMO_MODE else "🎬",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -256,7 +256,7 @@ def load_data():
 # ==================== HEADER ====================
 col1, col2, col3, col4 = st.columns([3, 1, 0.4, 0.4])
 with col1:
-    st.markdown("<h1>🚀 Helpdesk Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
+    st.markdown("<h1>🚀 SAMI Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
 with col2:
     if DEMO_MODE:
         st.markdown(f"""

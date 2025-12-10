@@ -9,24 +9,24 @@ import time
 from datetime import datetime
 
 STAFF = [
-    "brian.shaw@sa.gov.au",
-    "jason.quinn2@sa.gov.au", 
-    "john.drousas@sa.gov.au",
-    "betty.spaghetti@sa.gov.au",
-    "chuck.norris@sa.gov.au",
-    "diana.wonderwoman@sa.gov.au",
-    "tony.baloney@sa.gov.au",
-    "frank.beans@sa.gov.au",
-    "stella.artois@sa.gov.au",
-    "max.power@sa.gov.au"
+    "staff1@example.com",
+    "manager@example.com", 
+    "staff2@example.com",
+    "staff3@example.com",
+    "staff4@example.com",
+    "staff5@example.com",
+    "staff6@example.com",
+    "staff7@example.com",
+    "staff8@example.com",
+    "staff9@example.com"
 ]
 
 SENDERS = [
     "jones.radiology@hospital.com.au",
-    "rah.emergency@sa.gov.au",
-    "wch.imaging@sa.gov.au",
-    "flinders.imaging@sa.gov.au",
-    "mfm.unit@sa.gov.au"
+    "rah.emergency@example.com",
+    "wch.imaging@example.com",
+    "flinders.imaging@example.com",
+    "mfm.unit@example.com"
 ]
 
 REQUESTS = [

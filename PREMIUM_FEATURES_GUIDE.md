@@ -75,7 +75,7 @@ Your manager can see at a glance: "Ah, we need more coverage on Tuesday afternoo
 
 **Downloads:**
 - Complete CSV with all data
-- Filename: `sami_transfer_bot_20251210_1330.csv`
+- Filename: `helpdesk_transfer_bot_20251210_1330.csv`
 - Ready to share with upper management
 - Import into Excel for custom analysis
 
@@ -298,5 +298,5 @@ You've gone from a **simple bot** to a **complete operations management platform
 
 ---
 
-**Made with ❤️ for SAMI Support Team**
+**Made with ❤️ for Helpdesk Support Team**
 **Dashboard v3.0 - Enterprise Edition**

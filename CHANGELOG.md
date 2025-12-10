@@ -1,6 +1,6 @@
 # 📋 Changelog
 
-All notable changes to the SAMI Transfer Bot project are documented in this file.
+All notable changes to the Helpdesk Transfer Bot project are documented in this file.
 
 ---
 
@@ -132,5 +132,5 @@ TRANSFER BOT/
 
 ## Contributors
 
-- **SAMI Support Team** - Requirements & Testing
+- **Helpdesk Support Team** - Requirements & Testing
 - **Automated via AI Assistant** - Development & Documentation

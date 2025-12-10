@@ -91,20 +91,20 @@ The bot now logs specific events:
 
 ### Scenario 1: Staff Completes a Ticket ✅
 ```
-From: john.drousas@sa.gov.au
-Subject: RE: [Assigned: john.drousas@sa.gov.au] CT Scan Transfer
+From: staff2@example.com
+Subject: RE: [Assigned: staff2@example.com] CT Scan Transfer
 → Smart Filter: is_reply=True, is_staff=True
 → Action: ARCHIVE AS COMPLETE
-→ Log: "⏩ Skipped internal reply from john.drousas@sa.gov.au"
+→ Log: "⏩ Skipped internal reply from staff2@example.com"
 ```
 
 ### Scenario 2: Staff Logs Their Own Ticket 📨
 ```
-From: john.drousas@sa.gov.au
+From: staff2@example.com
 Subject: My computer won't turn on
 → Smart Filter: is_reply=False, is_bot_tagged=False
 → Action: ASSIGN TO NEXT PERSON (not John!)
-→ Log: "📨 Staff member john.drousas@sa.gov.au submitted NEW ticket"
+→ Log: "📨 Staff member staff2@example.com submitted NEW ticket"
 ```
 
 ### Scenario 3: External Customer Request 📨
@@ -113,7 +113,7 @@ From: jones.radiology@hospital.com.au
 Subject: CT Scan Transfer Request - Patient Smith
 → Smart Filter: is_staff=False
 → Action: ASSIGN TO NEXT PERSON
-→ Log: "[LIVE TEST] Assigned to brian.shaw@sa.gov.au"
+→ Log: "[LIVE TEST] Assigned to staff1@example.com"
 ```
 
 ---
