@@ -37,13 +37,15 @@ REQUESTS = [
     "Cardiac Imaging Transfer"
 ]
 
-# Urgent requests with clinical risk keywords (triggers CRITICAL detection)
+# Urgent requests with DELETION/MERGE keywords (high-risk operations)
 URGENT_REQUESTS = [
-    "STAT CT Brain - Suspected Stroke",
-    "URGENT MRI Spine - Cord Compression Query",
-    "STAT Cardiac CT - Chest Pain Query",
-    "URGENT Fetal MRI - Immediate Review Required",
-    "STAT CT Angio - Ruptured AAA Query"
+    "URGENT - Patient Record DELETION Request - Wrong Patient Imaged",
+    "STAT - MERGE Patient Records - Duplicate MRN Found",
+    "CRITICAL - DELETE Study Request - Privacy Breach",
+    "URGENT - MERGE Required - Patient Identity Error",
+    "STAT DELETE - Incorrect Patient Data Uploaded",
+    "CRITICAL MERGE - Split Patient Records Need Combining",
+    "URGENT DELETION - Confidential Study Sent to Wrong Site"
 ]
 
 PATIENTS = ["Smith J", "Brown M", "Wilson S", "Davis T", "Johnson R"]
