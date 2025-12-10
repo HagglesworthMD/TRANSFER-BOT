@@ -83,20 +83,47 @@ def run_job():
         staff_list = get_staff_list()
 
         for msg in msgs:
-            # 1. CHECK IF SENDER IS STAFF (REPLYING 'DONE')
             try:
                 sender_email = msg.SenderEmailAddress.lower()
             except:
                 sender_email = "unknown"
-
-            if sender_email in staff_list:
-                log(f"✅ Staff Reply from {sender_email}. Marking as Complete.")
+            
+            try:
+                subject = msg.Subject.strip()
+            except:
+                subject = ""
+            
+            # ==================== SMART FILTER ====================
+            # Only treat as internal reply/completion if:
+            # 1. Sender IS in staff.txt AND
+            # 2. Subject indicates a REPLY (starts with RE:, Accepted:, Declined:)
+            #    OR contains the bot's own tag [Assigned: (staff replying to assigned ticket)
+            #
+            # This prevents staff's OWN genuine tickets from being archived!
+            # =========================================================
+            
+            is_staff_sender = sender_email in staff_list
+            
+            # Check if subject indicates this is a REPLY, not a new ticket
+            reply_prefixes = ('re:', 'accepted:', 'declined:', 'fw:', 'fwd:')
+            is_reply = subject.lower().startswith(reply_prefixes)
+            is_bot_tagged = '[assigned:' in subject.lower() or '[completed:' in subject.lower()
+            
+            is_internal_reply = is_staff_sender and (is_reply or is_bot_tagged)
+            
+            if is_internal_reply:
+                # This IS a staff reply to an existing ticket - mark as complete
+                log(f"⏩ Skipped internal reply from {sender_email}: {subject[:50]}...")
                 msg.Subject = f"[COMPLETED: {sender_email}] {msg.Subject}"
                 msg.Save()
-                append_stats(msg.Subject, "STAFF-REPLY", sender_email)
+                append_stats(msg.Subject, "completed", sender_email)
                 msg.UnRead = False
                 msg.Move(processed)
                 continue
+            
+            # If staff sends a NEW email (not a reply), treat as new ticket!
+            if is_staff_sender and not is_internal_reply:
+                log(f"📨 Staff member {sender_email} submitted NEW ticket: {subject[:50]}...")
 
             # 2. IF NOT STAFF, ASSIGN IT
             person = get_next_staff()
