@@ -526,22 +526,32 @@ if not df_today.empty:
             """, unsafe_allow_html=True)
     
     # Row 2: Activity Timeline
-    st.markdown("### 🕒 Hourly Activity Trend")
+    # Hourly Activity section with info
+    col_hourly_title, col_hourly_info = st.columns([6, 1])
+    with col_hourly_title:
+        st.markdown("### 🕒 Hourly Activity Trend")
+    with col_hourly_info:
+        with st.expander("ℹ️ Info"):
+            st.caption("Shows when requests arrive throughout the day. Helps identify busy periods for staffing optimization.")
     
     # Group by hour
     df_today['Hour'] = df_today['DateTime'].dt.hour
     hourly_data = df_today.groupby('Hour').size().reset_index(name='Count')
     
+    # Format hours as time (HH:00)
+    hourly_data['Time'] = hourly_data['Hour'].apply(lambda x: f"{x:02d}:00")
+    
     # Create area chart
     fig_timeline = go.Figure()
     fig_timeline.add_trace(go.Scatter(
-        x=hourly_data['Hour'],
+        x=hourly_data['Time'],
         y=hourly_data['Count'],
         mode='lines+markers',
         fill='tozeroy',
         line=dict(color='#667eea', width=3),
         marker=dict(size=8, color='#764ba2'),
-        fillcolor='rgba(102, 126, 234, 0.3)'
+        fillcolor='rgba(102, 126, 234, 0.3)',
+        hovertemplate='<b>%{x}</b><br>Requests: %{y}<extra></extra>'
     ))
     
     fig_timeline.update_layout(
@@ -551,7 +561,7 @@ if not df_today.empty:
         xaxis=dict(
             showgrid=True,
             gridcolor='rgba(255,255,255,0.1)',
-            title="Hour of Day"
+            title="Time of Day"
         ),
         yaxis=dict(
             showgrid=True,
@@ -565,7 +575,12 @@ if not df_today.empty:
     st.plotly_chart(fig_timeline, use_container_width=True)
     
     # ==================== WEEK-OVER-WEEK COMPARISON ====================
-    st.markdown("### 📊 Week-over-Week Performance")
+    col_wow_title, col_wow_info = st.columns([6, 1])
+    with col_wow_title:
+        st.markdown("### 📊 Week-over-Week Performance")
+    with col_wow_info:
+        with st.expander("ℹ️ Info"):
+            st.caption("Compares this week's metrics vs last week. Shows if request volume and completion rates are improving or declining.")
     
     # Calculate this week vs last week
     this_week_start = (datetime.now() - timedelta(days=datetime.now().weekday())).strftime('%Y-%m-%d')
@@ -629,8 +644,13 @@ if not df_today.empty:
         st.metric("Trend", trend)
     
     # ==================== PEAK HOURS HEATMAP ====================
-    st.markdown("### 🔥 Peak Hours Heatmap")
-    st.caption("*Identify busiest times to optimize staffing*")
+    col_heat_title, col_heat_info = st.columns([6, 1])
+    with col_heat_title:
+        st.markdown("### 🔥 Peak Hours Heatmap")
+        st.caption("*Identify busiest times to optimize staffing*")
+    with col_heat_info:
+        with st.expander("ℹ️ Info"):
+            st.caption("Visual heatmap showing request volume by day and time. Darker = busier. Use this to plan staffing levels.")
     
     # Prepare data for heatmap (last 7 days)
     df_heatmap = df[df['Date'].isin(last_7_days)].copy()
@@ -649,16 +669,20 @@ if not df_today.empty:
         day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         heatmap_pivot = heatmap_pivot.reindex(columns=[d for d in day_order if d in heatmap_pivot.columns])
         
+        # Format y-axis as time (HH:00)
+        time_labels = [f"{int(h):02d}:00" for h in heatmap_pivot.index]
+        
         # Create heatmap
         fig_heatmap = go.Figure(data=go.Heatmap(
             z=heatmap_pivot.values,
             x=heatmap_pivot.columns,
-            y=heatmap_pivot.index,
+            y=time_labels,
             colorscale='Viridis',
             text=heatmap_pivot.values,
             texttemplate='%{text}',
             textfont={"size": 10},
-            colorbar=dict(title="Requests")
+            colorbar=dict(title="Requests"),
+            hovertemplate='<b>%{x}</b><br>Time: %{y}<br>Requests: %{text}<extra></extra>'
         ))
         
         fig_heatmap.update_layout(
@@ -666,7 +690,7 @@ if not df_today.empty:
             paper_bgcolor='rgba(0,0,0,0)',
             font=dict(color='white'),
             xaxis=dict(title="Day of Week", side="bottom"),
-            yaxis=dict(title="Hour of Day"),
+            yaxis=dict(title="Time of Day"),
             margin=dict(l=0, r=0, t=0, b=0),
             height=400
         )
@@ -676,7 +700,8 @@ if not df_today.empty:
         # Find peak hour
         if len(heatmap_data) > 0:
             peak_row = heatmap_data.loc[heatmap_data['Count'].idxmax()]
-            st.info(f"🔥 **Peak Time:** {peak_row['DayOfWeek']} at {int(peak_row['Hour'])}:00 ({int(peak_row['Count'])} requests)")
+            peak_time = f"{int(peak_row['Hour']):02d}:00"
+            st.info(f"🔥 **Peak Time:** {peak_row['DayOfWeek']} at {peak_time} ({int(peak_row['Count'])} requests)")
     else:
         st.info("Not enough data yet for heatmap analysis. Need at least 1 week of activity.")
     
