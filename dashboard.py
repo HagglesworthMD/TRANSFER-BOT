@@ -304,12 +304,12 @@ st.markdown("---")
 
 # Calculate health metrics
 total_today = len(df_today)
-active_staff = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].nunique()
-completed_today = len(df_today[df_today['Assigned To'] == 'STAFF-REPLY'])
+active_staff = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].nunique()
+completed_today = len(df_today[df_today['Assigned To'] == 'COMPLETED'])
 
 # Calculate balance score
 if total_today > 0:
-    assignment_data = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].value_counts()
+    assignment_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts()
     if len(assignment_data) > 0:
         max_load = assignment_data.max()
         min_load = assignment_data.min()
@@ -468,11 +468,11 @@ with col1:
     st.metric("📬 Requests Today", total_today, delta="+0" if total_today == 0 else f"+{len(df_today.tail(1))}")
 
 with col2:
-    active_staff = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].nunique()
+    active_staff = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].nunique()
     st.metric("👥 Staff Active", active_staff, delta=f"{len(staff_list)} total")
 
 with col3:
-    completed = len(df_today[df_today['Assigned To'] == 'STAFF-REPLY'])
+    completed = len(df_today[df_today['Assigned To'] == 'COMPLETED'])
     st.metric("✅ Completed", completed, delta=f"{(completed/total_today*100):.0f}%" if total_today > 0 else "0%")
 
 with col4:
@@ -498,7 +498,7 @@ if not df_today.empty:
         st.markdown("### 📈 Workload Distribution")
         
         # Get assignment counts (excluding staff replies)
-        assignment_data = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].value_counts().reset_index()
+        assignment_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts().reset_index()
         assignment_data.columns = ['Staff', 'Assignments']
         
         # Unique colors for each staff member (vibrant and distinct)
@@ -685,22 +685,22 @@ if not df_today.empty:
             delta_color="normal" if volume_change >= 0 else "inverse"
         )
     
+    # Calculate completion metrics
+    this_week_completed = len(this_week_df[this_week_df['Assigned To'] == 'COMPLETED'])
+    this_week_requests = len(this_week_df[this_week_df['Assigned To'] != 'COMPLETED'])
+    last_week_completed = len(last_week_df[last_week_df['Assigned To'] == 'COMPLETED'])
+    last_week_requests = len(last_week_df[last_week_df['Assigned To'] != 'COMPLETED'])
+    
+    completion_rate_this = (this_week_completed / this_week_requests * 100) if this_week_requests > 0 else 0
+    completion_rate_last = (last_week_completed / last_week_requests * 100) if last_week_requests > 0 else 0
+    completion_change = completion_rate_this - completion_rate_last
+    
     with col_wow2:
-        # Find peak day this week
-        if len(this_week_df) > 0:
-            daily_counts = this_week_df.groupby('Date').size()
-            peak_day = daily_counts.idxmax()
-            peak_count = daily_counts.max()
-            # Format date nicely
-            peak_day_name = pd.to_datetime(peak_day).strftime('%A')[:3]
-        else:
-            peak_day_name = "N/A"
-            peak_count = 0
-        
         st.metric(
-            "Peak Day",
-            f"{peak_day_name}",
-            delta=f"{peak_count} requests"
+            "Completion Rate",
+            f"{completion_rate_this:.0f}%",
+            delta=f"{completion_change:+.0f}% vs last week",
+            delta_color="normal" if completion_change >= 0 else "inverse"
         )
     
     with col_wow3:
@@ -805,7 +805,7 @@ if not df_today.empty:
             subject_short = row['Subject'][:60] + "..." if len(row['Subject']) > 60 else row['Subject']
             assigned = row['Assigned To']
             
-            if assigned == 'STAFF-REPLY':
+            if assigned == 'COMPLETED':
                 icon = "✅"
                 color = "#10b981"
                 label_text = "Completed"
@@ -826,7 +826,7 @@ if not df_today.empty:
     with col2:
         st.markdown("### 🏆 Staff Leaderboard")
         
-        leaderboard_data = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].value_counts().head(5)
+        leaderboard_data = df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].value_counts().head(5)
         
         medals = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣"]
         for idx, (staff, count) in enumerate(leaderboard_data.items()):
@@ -856,13 +856,13 @@ if not df_today.empty:
     st.markdown("---")
     st.markdown("### 👥 Individual Staff Performance Dashboard")
     
-    # Get all staff members (excluding STAFF-REPLY)
+    # Get all staff members (excluding COMPLETED)
     all_staff = set(staff_list)
-    assigned_staff = set(df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].unique())
+    assigned_staff = set(df_today[df_today['Assigned To'] != 'COMPLETED']['Assigned To'].unique())
     all_staff.update(assigned_staff)
     
-    # Explicitly remove STAFF-REPLY if it somehow got included
-    all_staff.discard('STAFF-REPLY')
+    # Explicitly remove COMPLETED if it somehow got included
+    all_staff.discard('COMPLETED')
     all_staff.discard('staff-reply')
     
     # Calculate KPIs for each staff member
@@ -877,9 +877,9 @@ if not df_today.empty:
         total_today = len(staff_data_today)
         total_all_time = len(staff_data_all)
         
-        # Calculate completion-related metrics (approximation based on STAFF-REPLY entries)
+        # Calculate completion-related metrics (approximation based on COMPLETED entries)
         # Note: Completions are tracked when staff replies, so we check for patterns
-        completed_today = 0  # Would need STAFF-REPLY tracking per person for accuracy
+        completed_today = 0  # Would need COMPLETED tracking per person for accuracy
         
         # Calculate average assignment time (time between assignments)
         if len(staff_data_today) > 1:
@@ -925,7 +925,7 @@ if not df_today.empty:
             
             with kpi4:
                 # Calculate workload percentage (vs average)
-                avg_per_staff_today = len(df_today[df_today['Assigned To'] != 'STAFF-REPLY']) / len(staff_list) if len(staff_list) > 0 else 0
+                avg_per_staff_today = len(df_today[df_today['Assigned To'] != 'COMPLETED']) / len(staff_list) if len(staff_list) > 0 else 0
                 workload_pct = (total_today / avg_per_staff_today * 100) if avg_per_staff_today > 0 else 100
                 
                 if workload_pct > 110:
@@ -1086,8 +1086,8 @@ with col_ext_info:
 # Check if Sender column exists
 if 'Sender' in df.columns:
     # Clean sender data (exclude staff replies from sender analysis)
-    df_with_sender = df[(df['Sender'].notna()) & (df['Sender'] != 'unknown') & (df['Assigned To'] != 'STAFF-REPLY')].copy()
-    df_today_sender = df_today[(df_today['Sender'].notna()) & (df_today['Sender'] != 'unknown') & (df_today['Assigned To'] != 'STAFF-REPLY')].copy()
+    df_with_sender = df[(df['Sender'].notna()) & (df['Sender'] != 'unknown') & (df['Assigned To'] != 'COMPLETED')].copy()
+    df_today_sender = df_today[(df_today['Sender'].notna()) & (df_today['Sender'] != 'unknown') & (df_today['Assigned To'] != 'COMPLETED')].copy()
     
     if len(df_with_sender) > 0:
         col_src1, col_src2 = st.columns(2)
