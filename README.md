@@ -107,6 +107,7 @@ TRANSFER BOT/
 ├── 📚 Documentation
 │   ├── README.md           # This file
 │   ├── CHANGELOG.md        # Version history
+│   ├── SYSTEM_ARCHITECTURE.md  # 🆕 Flow diagrams & logic explained
 │   ├── SMART_FILTER_WORKFLOW.md  # Filter logic docs
 │   ├── WINDOWS_SETUP.md    # Windows installation
 │   └── HOW_TO_RUN.md       # Quick start guide
