@@ -1135,8 +1135,6 @@ with col_req2:
         f"{today_completion:.0f}%",
         delta=f"{today_completed} of {today_new} completed"
     )
-else:
-    st.warning("⚠️ **Sender tracking not enabled yet.** The distributor bot will start capturing sender information on the next run. Restart the distributor to enable this feature.")
 
 # ==================== FOOTER ====================
 st.markdown("---")
