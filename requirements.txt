@@ -1,4 +1,17 @@
+# SAMI Clinical Safety Bot v2.2
+# Core Dependencies
+
+# Dashboard
 streamlit>=1.28.0
 pandas>=2.0.0
 plotly>=5.17.0
+
+# Utilities
 python-dateutil>=2.8.2
+schedule>=1.2.0
+
+# Windows/Outlook Integration (Windows only)
+pywin32>=306; sys_platform == 'win32'
+
+# File Monitoring (optional, for advanced watchdog)
+watchdog>=3.0.0

@@ -299,6 +299,164 @@ if df is None:
 today = datetime.now().strftime('%Y-%m-%d')
 df_today = df[df['Date'] == today].copy()
 
+# ==================== CLINICAL CONTROL TOWER ====================
+st.markdown("---")
+
+# Load SLA Watchdog data
+def load_watchdog():
+    """Load urgent watchdog data"""
+    try:
+        watchdog_file = os.path.join(os.path.dirname(__file__), 'urgent_watchdog.json')
+        if os.path.exists(watchdog_file):
+            with open(watchdog_file, 'r') as f:
+                return json.load(f)
+    except:
+        pass
+    return {}
+
+watchdog_data = load_watchdog()
+sla_limit_minutes = 20
+
+# Calculate SLA statuses
+active_risks = []
+breached_risks = []
+now = datetime.now()
+
+for msg_id, ticket in watchdog_data.items():
+    try:
+        ticket_time = datetime.fromisoformat(ticket['timestamp'])
+        elapsed = now - ticket_time
+        elapsed_minutes = elapsed.total_seconds() / 60
+        remaining = sla_limit_minutes - elapsed_minutes
+        
+        ticket_info = {
+            'id': msg_id[:8] + '...',
+            'subject': ticket.get('subject', 'Unknown')[:40],
+            'assignee': ticket.get('assigned_to', 'Unknown').split('@')[0],
+            'risk_type': ticket.get('risk_type', 'Unknown'),
+            'elapsed': int(elapsed_minutes),
+            'remaining': max(0, int(remaining)),
+            'escalations': ticket.get('escalation_count', 0)
+        }
+        
+        if elapsed_minutes > sla_limit_minutes:
+            breached_risks.append(ticket_info)
+        else:
+            active_risks.append(ticket_info)
+    except:
+        continue
+
+# Determine overall status
+if breached_risks:
+    tower_status = "BREACH"
+    banner_color = "#ef4444"  # Red
+    banner_icon = "🚨"
+    banner_text = f"SLA BREACH - {len(breached_risks)} ticket(s) exceeded {sla_limit_minutes}min limit!"
+elif active_risks:
+    tower_status = "ACTIVE"
+    banner_color = "#f59e0b"  # Amber
+    banner_icon = "⚠️"
+    banner_text = f"Active Risks - {len(active_risks)} urgent ticket(s) being monitored"
+else:
+    tower_status = "NORMAL"
+    banner_color = "#10b981"  # Green
+    banner_icon = "✅"
+    banner_text = "System Normal - No urgent tickets pending"
+
+# Display Clinical Control Tower
+col_tower_title, col_tower_info = st.columns([6, 1])
+with col_tower_title:
+    st.markdown("### 🏥 Clinical Control Tower")
+    st.caption("*Real-time SLA monitoring for critical requests*")
+with col_tower_info:
+    with st.expander("ℹ️ Info"):
+        st.caption("Monitors urgent tickets with 20-minute SLA. Red = Breach, Yellow = Active, Green = Normal.")
+
+# Status Banner
+st.markdown(f"""
+<div style='
+    background: linear-gradient(135deg, {banner_color}20 0%, {banner_color}10 100%);
+    border-left: 4px solid {banner_color};
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+'>
+    <div style='display: flex; align-items: center; gap: 1rem;'>
+        <span style='font-size: 2rem;'>{banner_icon}</span>
+        <div>
+            <div style='font-size: 1.2rem; font-weight: 700; color: {banner_color};'>{tower_status}</div>
+            <div style='font-size: 0.9rem; color: {text_color};'>{banner_text}</div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# Show urgent tickets table if any exist
+if active_risks or breached_risks:
+    col_metrics1, col_metrics2, col_metrics3, col_metrics4 = st.columns(4)
+    
+    with col_metrics1:
+        st.metric("Active Risks", len(active_risks), delta=None)
+    with col_metrics2:
+        st.metric("SLA Breaches", len(breached_risks), delta_color="inverse" if breached_risks else "off")
+    with col_metrics3:
+        total_escalations = sum(t.get('escalations', 0) for t in breached_risks + active_risks)
+        st.metric("Escalations", total_escalations)
+    with col_metrics4:
+        if 'Risk Level' in df_today.columns:
+            critical_today = len(df_today[df_today['Risk Level'].isin(['critical', 'urgent'])])
+        else:
+            critical_today = 0
+        st.metric("Critical Today", critical_today)
+    
+    # Tickets table
+    if breached_risks:
+        st.markdown("#### 🚨 SLA Breached Tickets")
+        breach_df = pd.DataFrame(breached_risks)
+        breach_df = breach_df.rename(columns={
+            'assignee': 'Assigned To',
+            'subject': 'Subject',
+            'risk_type': 'Risk Type',
+            'elapsed': 'Elapsed (min)',
+            'escalations': 'Escalations'
+        })
+        
+        # Highlight breached rows
+        def highlight_breach(row):
+            return ['background-color: rgba(239, 68, 68, 0.2)'] * len(row)
+        
+        st.dataframe(
+            breach_df[['Subject', 'Assigned To', 'Risk Type', 'Elapsed (min)', 'Escalations']].style.apply(highlight_breach, axis=1),
+            use_container_width=True,
+            height=150
+        )
+    
+    if active_risks:
+        st.markdown("#### ⏱️ Active Urgent Tickets")
+        active_df = pd.DataFrame(active_risks)
+        active_df = active_df.rename(columns={
+            'assignee': 'Assigned To',
+            'subject': 'Subject',
+            'risk_type': 'Risk Type',
+            'remaining': 'Time Left (min)',
+            'elapsed': 'Elapsed (min)'
+        })
+        
+        # Highlight based on remaining time
+        def highlight_urgency(row):
+            remaining = row.get('Time Left (min)', 20)
+            if remaining < 5:
+                return ['background-color: rgba(239, 68, 68, 0.2)'] * len(row)
+            elif remaining < 10:
+                return ['background-color: rgba(245, 158, 11, 0.2)'] * len(row)
+            return [''] * len(row)
+        
+        st.dataframe(
+            active_df[['Subject', 'Assigned To', 'Risk Type', 'Time Left (min)']].style.apply(highlight_urgency, axis=1),
+            use_container_width=True,
+            height=200
+        )
+
 # ==================== EXECUTIVE SUMMARY & HEALTH STATUS ====================
 st.markdown("---")
 
