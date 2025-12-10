@@ -410,6 +410,60 @@ with col_export2:
         help="Download complete dataset for external analysis"
     )
 
+# ==================== SHAME JOHN BUTTON (Easter Egg) ====================
+# Show button if workload is imbalanced and John exists in staff
+if balance_score < 70 and 'john.drousas@sa.gov.au' in staff_list:
+    john_assignments = len(df_today[df_today['Assigned To'] == 'john.drousas@sa.gov.au'])
+    avg_assignments = total_today / len(staff_list) if len(staff_list) > 0 else 0
+    
+    if john_assignments < avg_assignments * 0.5:  # John is doing less than half the average
+        st.markdown("---")
+        col_shame1, col_shame2, col_shame3 = st.columns([1, 1, 1])
+        with col_shame2:
+            email_subject = "RE: Your Outstanding Workload Performance"
+            email_body = f"""Hi John,
+
+I hope this email finds you well and not napping at your desk! 😴
+
+I couldn't help but notice that while the rest of the team is crushing it with an average of {avg_assignments:.0f} requests today, you've managed to handle a whopping {john_assignments} requests.
+
+That's {(john_assignments/avg_assignments*100):.0f}% of the team average! Impressive dedication to work-life balance! 🏖️
+
+Perhaps we could discuss:
+- Your secret productivity techniques (napping strategies?)
+- Whether you've discovered time travel (backwards only?)
+- If your keyboard is broken (just the work-related keys?)
+
+Looking forward to your response... whenever you get around to it! 😉
+
+Best regards,
+The Dashboard That Never Sleeps
+
+P.S. Chuck Norris has done {len(df_today[df_today['Assigned To'] == 'chuck.norris@sa.gov.au'])} requests today. Just saying.
+"""
+            mailto_link = f"mailto:john.drousas@sa.gov.au?subject={email_subject.replace(' ', '%20')}&body={email_body.replace(' ', '%20').replace('\\n', '%0A')}"
+            
+            st.markdown(f"""
+                <a href="{mailto_link}" target="_blank">
+                    <button style="
+                        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        width: 100%;
+                        box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+                        transition: all 0.3s ease;
+                    ">
+                        🔔 Email John (He's Slacking!)
+                    </button>
+                </a>
+            """, unsafe_allow_html=True)
+            st.caption("⚠️ Warning: May cause office laughter")
+
 st.markdown("---")
 
 # ==================== KEY METRICS ROW ====================
