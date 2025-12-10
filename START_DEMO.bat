@@ -21,6 +21,13 @@ echo.
 echo ========================================
 echo.
 
-venv\Scripts\python.exe -m streamlit run dashboard.py
+REM Try venv first, fall back to system Python
+if exist "venv\Scripts\python.exe" (
+    echo Using virtual environment...
+    venv\Scripts\python.exe -m streamlit run dashboard.py
+) else (
+    echo Using system Python...
+    python -m streamlit run dashboard.py
+)
 
 pause

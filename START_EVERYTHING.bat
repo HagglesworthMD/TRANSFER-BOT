@@ -20,6 +20,13 @@ echo Press Ctrl+C to stop the bot
 echo ------------------------------------------------
 echo.
 
-venv\Scripts\python.exe distributor.py
+REM Try venv first, fall back to system Python
+if exist "venv\Scripts\python.exe" (
+    echo Using virtual environment...
+    venv\Scripts\python.exe distributor.py
+) else (
+    echo Using system Python...
+    python distributor.py
+)
 
 pause
