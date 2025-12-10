@@ -1,0 +1,3 @@
+@echo off
+echo Opening SAMI Dashboard...
+start http://localhost:8502

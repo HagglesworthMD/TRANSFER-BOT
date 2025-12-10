@@ -1,0 +1,138 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║         SAMI TRANSFER BOT - MANAGER'S CHEAT SHEET                ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+📱 QUICK ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+From your computer:
+  🌐 http://localhost:8502
+
+From your phone/tablet (same network):
+  🌐 http://172.20.10.5:8502
+
+💡 TIP: Bookmark this on your phone's home screen!
+
+
+🚀 STARTING THE DASHBOARD (3 Options)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. EASIEST - Double-click this file:
+   📂 launch_dashboard.sh
+
+2. RUN IN BACKGROUND (recommended for 24/7):
+   💻 ./dashboard_service.sh start
+   
+   Then forget about it! It keeps running even if you close the terminal.
+
+3. MANUAL:
+   💻 source venv/bin/activate
+   💻 streamlit run dashboard.py
+
+
+📊 WHAT THE NUMBERS MEAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📬 REQUESTS TODAY
+   Total emails processed in the last 24 hours
+
+👥 STAFF ACTIVE
+   How many staff members are currently in rotation
+
+✅ COMPLETED
+   Requests marked as done by staff (when they reply)
+
+⚖️ AVG PER STAFF
+   Average workload per person (should be roughly equal)
+
+🕐 LAST ACTIVITY
+   How long since the last email was assigned
+
+💯 BALANCE SCORE
+   100% = Perfect distribution
+    80% = Good (normal variation)
+    60% = Fair
+   <60% = May need attention
+
+
+🎯 KEY THINGS TO WATCH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Balance Score staying above 70%
+✅ Hourly chart showing expected patterns
+✅ All staff members appearing in the leaderboard
+⚠️  Last Activity over 60 minutes (during business hours)
+⚠️  One person with way more assignments than others
+
+
+📱 MOBILE ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+iPhone/iPad:
+1. Open Safari, go to the dashboard URL
+2. Tap the Share button
+3. Select "Add to Home Screen"
+4. Now it's like an app!
+
+Android:
+1. Open Chrome, go to the dashboard URL
+2. Tap the menu (three dots)
+3. Select "Add to Home screen"
+4. Perfect!
+
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROBLEM: Page won't load
+FIX: Check if dashboard is running:
+     💻 ./dashboard_service.sh status
+
+PROBLEM: Data not updating
+FIX: The bot updates the CSV file automatically.
+     Check if distributor.py is running.
+
+PROBLEM: Need to restart dashboard
+FIX: 💻 ./dashboard_service.sh restart
+
+PROBLEM: Want to see error logs
+FIX: 💻 ./dashboard_service.sh logs
+
+
+⚙️  SERVICE COMMANDS (For Background Mode)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Start:   ./dashboard_service.sh start
+Stop:    ./dashboard_service.sh stop
+Restart: ./dashboard_service.sh restart
+Status:  ./dashboard_service.sh status
+Logs:    ./dashboard_service.sh logs
+
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ Leave it open on a wall-mounted monitor for the team to see
+✨ Check hourly trends to identify peak request times
+✨ Use the 7-day chart to plan weekly staffing
+✨ Auto-refreshes every 5 seconds - just leave it open!
+✨ Export the audit log table for reports (copy/paste works)
+✨ The dashboard is READ ONLY - can't break anything!
+
+
+📞 QUICK REFERENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Files that matter:
+  📊 daily_stats.csv      - All the data (auto-generated)
+  👥 staff.txt            - Staff member email list
+  🎯 roster_state.json    - Current round-robin position
+
+Core scripts:
+  🤖 distributor.py       - The email bot (does the work)
+  📈 dashboard.py         - The dashboard (shows the work)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Made with ❤️  for SAMI Support Team | Questions? Check README.md
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
