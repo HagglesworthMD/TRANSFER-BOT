@@ -978,22 +978,27 @@ fig_weekly.update_layout(
 
 st.plotly_chart(fig_weekly, use_container_width=True)
 
-# ==================== REQUEST SOURCES ANALYTICS ====================
+# ==================== EXTERNAL REQUEST SOURCES ====================
 st.markdown("---")
-st.markdown("### 📧 Request Sources Analytics")
-st.markdown("*Understand who's sending requests and response patterns*")
+col_ext_title, col_ext_info = st.columns([6, 1])
+with col_ext_title:
+    st.markdown("### 📧 External Request Sources")
+    st.markdown("*Who is sending us requests?*")
+with col_ext_info:
+    with st.expander("ℹ️ Info"):
+        st.caption("Shows which external sources (hospitals, clinics, departments) send the most requests. Helps identify key partners and service demand.")
 
 # Check if Sender column exists
 if 'Sender' in df.columns:
-    # Clean sender data
-    df_with_sender = df[df['Sender'].notna() & (df['Sender'] != 'unknown')].copy()
-    df_today_sender = df_today[df_today['Sender'].notna() & (df_today['Sender'] != 'unknown')].copy()
+    # Clean sender data (exclude staff replies from sender analysis)
+    df_with_sender = df[(df['Sender'].notna()) & (df['Sender'] != 'unknown') & (df['Assigned To'] != 'STAFF-REPLY')].copy()
+    df_today_sender = df_today[(df_today['Sender'].notna()) & (df_today['Sender'] != 'unknown') & (df_today['Assigned To'] != 'STAFF-REPLY')].copy()
     
     if len(df_with_sender) > 0:
         col_src1, col_src2 = st.columns(2)
         
         with col_src1:
-            st.markdown("#### 📊 Top Request Sources (All Time)")
+            st.markdown("#### 📊 Top 10 Request Sources (All Time)")
             
             # Get top senders
             top_senders = df_with_sender['Sender'].value_counts().head(10)
@@ -1016,7 +1021,7 @@ if 'Sender' in df.columns:
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
                 font=dict(color='white', size=10),
-                xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Requests"),
+                xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.1)', title="Total Requests"),
                 yaxis=dict(showgrid=False),
                 margin=dict(l=0, r=0, t=0, b=0),
                 height=350
@@ -1025,89 +1030,111 @@ if 'Sender' in df.columns:
             st.plotly_chart(fig_senders, use_container_width=True)
         
         with col_src2:
-            st.markdown("#### 📈 Request Volume by Source (Today)")
+            st.markdown("#### � Sender Details")
             
-            if len(df_today_sender) > 0:
-                today_senders = df_today_sender['Sender'].value_counts().head(10)
-                
-                # Create pie chart
-                fig_pie = go.Figure(data=[go.Pie(
-                    labels=today_senders.index,
-                    values=today_senders.values,
-                    hole=.3,
-                    marker=dict(colors=['#667eea', '#764ba2', '#f093fb', '#4facfe', '#00f2fe', '#43e97b', '#fa709a', '#fee140', '#30cfd0', '#a8edea'])
-                )])
-                
-                fig_pie.update_layout(
-                    plot_bgcolor='rgba(0,0,0,0)',
-                    paper_bgcolor='rgba(0,0,0,0)',
-                    font=dict(color='white', size=10),
-                    margin=dict(l=0, r=0, t=0, b=0),
-                    height=350,
-                    showlegend=True
-                )
-                
-                st.plotly_chart(fig_pie, use_container_width=True)
-            else:
-                st.info("No requests with sender data today")
-        
-        # Response time analysis
-        st.markdown("#### ⏱️ Response Time Patterns")
-        
-        # Calculate completion metrics
-        completed_requests = df[df['Assigned To'] == 'STAFF-REPLY'].copy()
-        
-        if len(completed_requests) > 0:
-            col_rt1, col_rt2, col_rt3 = st.columns(3)
+            # Create sender summary
+            sender_summary = df_with_sender.groupby('Sender').agg({
+                'Date': 'count',
+                'DateTime': ['min', 'max']
+            }).reset_index()
             
-            with col_rt1:
-                st.metric(
-                    "Total Completed",
-                    len(completed_requests),
-                    delta=f"{(len(completed_requests)/len(df)*100):.1f}% of all requests"
-                )
+            sender_summary.columns = ['Sender', 'Total Requests', 'First Request', 'Last Request']
+            sender_summary = sender_summary.sort_values('Total Requests', ascending=False).head(10)
             
-            with col_rt2:
-                # Calculate average time between assignment and completion (approximation)
-                # This is simplified - for accurate tracking, we'd need to match original assignment to completion
-                avg_completion_time = "~2-4 hours"  # Placeholder
-                st.metric(
-                    "Avg Response Time",
-                    avg_completion_time,
-                    delta="Estimated"
-                )
+            # Format datetime columns
+            sender_summary['First Request'] = pd.to_datetime(sender_summary['First Request']).dt.strftime('%Y-%m-%d')
+            sender_summary['Last Request'] = pd.to_datetime(sender_summary['Last Request']).dt.strftime('%Y-%m-%d')
             
-            with col_rt3:
-                completed_today = len(df_today[df_today['Assigned To'] == 'STAFF-REPLY'])
-                st.metric(
-                    "Completed Today",
-                    completed_today,
-                    delta=f"{(completed_today/len(df_today)*100):.0f}%" if len(df_today) > 0 else "0%"
-                )
-        
-        # Sender details table
-        st.markdown("#### 📋 Sender Details")
-        
-        # Create sender summary
-        sender_summary = df_with_sender.groupby('Sender').agg({
-            'Date': 'count',
-            'DateTime': ['min', 'max']
-        }).reset_index()
-        
-        sender_summary.columns = ['Sender', 'Total Requests', 'First Request', 'Last Request']
-        sender_summary = sender_summary.sort_values('Total Requests', ascending=False).head(15)
-        
-        # Format datetime columns
-        sender_summary['First Request'] = pd.to_datetime(sender_summary['First Request']).dt.strftime('%Y-%m-%d %H:%M')
-        sender_summary['Last Request'] = pd.to_datetime(sender_summary['Last Request']).dt.strftime('%Y-%m-%d %H:%M')
-        
-        st.dataframe(
-            sender_summary,
-            use_container_width=True,
-            height=300
-        )
+            st.dataframe(
+                sender_summary,
+                use_container_width=True,
+                height=350
+            )
     else:
-        st.info("📭 No sender data available yet. New requests will be tracked with sender information.")
+        st.info("📭 No external sender data available yet. New requests will be tracked with sender information.")
+else:
+    st.warning("⚠️ Sender tracking not enabled. Update distributor.py to track sender information.")
+
+# ==================== REQUEST TYPE DISTRIBUTION ====================
+st.markdown("---")
+col_type_title, col_type_info = st.columns([6, 1])
+with col_type_title:
+    st.markdown("### 📊 Request Type Distribution")
+    st.markdown("*New assignments vs staff responses*")
+with col_type_info:
+    with st.expander("ℹ️ Info"):
+        st.caption("Shows the balance between new incoming requests and staff completions. Helps track workload vs throughput.")
+
+col_req1, col_req2 = st.columns(2)
+
+with col_req1:
+    st.markdown("#### 📈 Request Types (All Time)")
+    
+    # Count assignments vs staff replies
+    new_assignments = len(df[df['Assigned To'] != 'STAFF-REPLY'])
+    staff_replies = len(df[df['Assigned To'] == 'STAFF-REPLY'])
+    
+    # Create pie chart
+    fig_types = go.Figure(data=[go.Pie(
+        labels=['New Assignments', 'Staff Replies (Completed)'],
+        values=[new_assignments, staff_replies],
+        hole=.4,
+        marker=dict(colors=['#667eea', '#10b981']),
+        textinfo='label+percent+value',
+        textfont=dict(size=14)
+    )])
+    
+    fig_types.update_layout(
+        plot_bgcolor='rgba(0,0,0,0)',
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(color='white'),
+        margin=dict(l=0, r=0, t=20, b=0),
+        height=350,
+        showlegend=True
+    )
+    
+    st.plotly_chart(fig_types, use_container_width=True)
+
+with col_req2:
+    st.markdown("#### ⏱️ Response Metrics")
+    
+    # Calculate metrics
+    col_metric1, col_metric2 = st.columns(2)
+    
+    with col_metric1:
+        st.metric(
+            "Total Requests",
+            new_assignments,
+            help="New requests assigned to staff"
+        )
+        
+    with col_metric2:
+        st.metric(
+            "Total Completed",
+            staff_replies,
+            help="Requests marked as complete by staff"
+        )
+    
+    st.markdown("---")
+    
+    # Completion rate
+    completion_rate = (staff_replies / new_assignments * 100) if new_assignments > 0 else 0
+    st.metric(
+        "Overall Completion Rate",
+        f"{completion_rate:.1f}%",
+        delta=f"{staff_replies} of {new_assignments} completed"
+    )
+    
+    # Today's metrics
+    today_new = len(df_today[df_today['Assigned To'] != 'STAFF-REPLY'])
+    today_completed = len(df_today[df_today['Assigned To'] == 'STAFF-REPLY'])
+    today_completion = (today_completed / today_new * 100) if today_new > 0 else 0
+    
+    st.metric(
+        "Today's Completion Rate",
+        f"{today_completion:.0f}%",
+        delta=f"{today_completed} of {today_new} completed"
+    )
 else:
     st.warning("⚠️ **Sender tracking not enabled yet.** The distributor bot will start capturing sender information on the next run. Restart the distributor to enable this feature.")
 
