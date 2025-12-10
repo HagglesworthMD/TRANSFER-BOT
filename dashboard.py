@@ -451,7 +451,7 @@ P.S. Chuck Norris has done {chuck_count} requests today. Just saying.
             # Properly encode the mailto URL
             mailto_link = f"mailto:john.drousas@sa.gov.au?subject={urllib.parse.quote(email_subject)}&body={urllib.parse.quote(email_body)}"
             
-            if st.button("🔔 Email John (He's Slacking!)", use_container_width=True, type="primary"):
+            if st.button("📧 Email John", use_container_width=True, type="primary"):
                 st.markdown(f'<meta http-equiv="refresh" content="0;url={mailto_link}">', unsafe_allow_html=True)
                 st.success("📧 Opening email client...")
             
