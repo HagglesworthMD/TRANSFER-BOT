@@ -426,18 +426,18 @@ if balance_score < 70 and 'john.drousas@sa.gov.au' in staff_list:
             email_subject = "RE: Your Outstanding Workload Performance"
             email_body = f"""Hi John,
 
-I hope this email finds you well and not napping at your desk! 😴
+I hope this email finds you well and not napping at your desk!
 
 I couldn't help but notice that while the rest of the team is crushing it with an average of {avg_assignments:.0f} requests today, you've managed to handle a whopping {john_assignments} requests.
 
-That's {(john_assignments/avg_assignments*100):.0f}% of the team average! Impressive dedication to work-life balance! 🏖️
+That's {(john_assignments/avg_assignments*100):.0f}% of the team average! Impressive dedication to work-life balance!
 
 Perhaps we could discuss:
   • Your secret productivity techniques (napping strategies?)
   • Whether you've discovered time travel (backwards only?)
   • If your keyboard is broken (just the work-related keys?)
 
-Looking forward to your response... whenever you get around to it! 😉
+Looking forward to your response... whenever you get around to it!
 
 Best regards,
 The Dashboard That Never Sleeps
