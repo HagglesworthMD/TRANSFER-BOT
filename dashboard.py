@@ -634,16 +634,14 @@ if not df_today.empty:
         xaxis=dict(
             showgrid=True,
             gridcolor=chart_grid_color,
-            title="Time of Day",
-            tickfont=dict(color=chart_text_color),
-            titlefont=dict(color=chart_text_color)
+            title=dict(text="Time of Day", font=dict(color=chart_text_color)),
+            tickfont=dict(color=chart_text_color)
         ),
         yaxis=dict(
             showgrid=True,
             gridcolor=chart_grid_color,
-            title="Requests",
-            tickfont=dict(color=chart_text_color),
-            titlefont=dict(color=chart_text_color)
+            title=dict(text="Requests", font=dict(color=chart_text_color)),
+            tickfont=dict(color=chart_text_color)
         ),
         margin=dict(l=0, r=0, t=0, b=0),
         height=250
@@ -767,15 +765,13 @@ if not df_today.empty:
             paper_bgcolor='rgba(0,0,0,0)',
             font=dict(color=chart_text_color),
             xaxis=dict(
-                title="Day of Week", 
+                title=dict(text="Day of Week", font=dict(color=chart_text_color)),
                 side="bottom",
-                tickfont=dict(color=chart_text_color),
-                titlefont=dict(color=chart_text_color)
+                tickfont=dict(color=chart_text_color)
             ),
             yaxis=dict(
-                title="Time of Day",
-                tickfont=dict(color=chart_text_color),
-                titlefont=dict(color=chart_text_color)
+                title=dict(text="Time of Day", font=dict(color=chart_text_color)),
+                tickfont=dict(color=chart_text_color)
             ),
             margin=dict(l=0, r=0, t=0, b=0),
             height=400
@@ -973,8 +969,8 @@ if not df_today.empty:
                             plot_bgcolor='rgba(0,0,0,0)',
                             paper_bgcolor='rgba(0,0,0,0)',
                             font=dict(color=chart_text_color, size=10),
-                            xaxis=dict(showgrid=False, title="Hour"),
-                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Requests"),
+                            xaxis=dict(showgrid=False, title=dict(text="Hour", font=dict(color=chart_text_color))),
+                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title=dict(text="Requests", font=dict(color=chart_text_color))),
                             margin=dict(l=0, r=0, t=0, b=0),
                             height=200
                         )
@@ -1007,8 +1003,8 @@ if not df_today.empty:
                             plot_bgcolor='rgba(0,0,0,0)',
                             paper_bgcolor='rgba(0,0,0,0)',
                             font=dict(color=chart_text_color, size=10),
-                            xaxis=dict(showgrid=False, title="Date"),
-                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title="Requests"),
+                            xaxis=dict(showgrid=False, title=dict(text="Date", font=dict(color=chart_text_color))),
+                            yaxis=dict(showgrid=True, gridcolor=chart_grid_color, title=dict(text="Requests", font=dict(color=chart_text_color))),
                             margin=dict(l=0, r=0, t=0, b=0),
                             height=200
                         )
@@ -1058,16 +1054,14 @@ fig_weekly.update_layout(
     font=dict(color=chart_text_color),
     xaxis=dict(
         showgrid=False, 
-        title="Date",
-        tickfont=dict(color=chart_text_color),
-        titlefont=dict(color=chart_text_color)
+        title=dict(text="Date", font=dict(color=chart_text_color)),
+        tickfont=dict(color=chart_text_color)
     ),
     yaxis=dict(
         showgrid=True, 
         gridcolor=chart_grid_color, 
-        title="Requests",
-        tickfont=dict(color=chart_text_color),
-        titlefont=dict(color=chart_text_color)
+        title=dict(text="Requests", font=dict(color=chart_text_color)),
+        tickfont=dict(color=chart_text_color)
     ),
     margin=dict(l=0, r=0, t=0, b=0),
     height=250
@@ -1121,9 +1115,8 @@ if 'Sender' in df.columns:
                 xaxis=dict(
                     showgrid=True, 
                     gridcolor=chart_grid_color, 
-                    title="Total Requests",
-                    tickfont=dict(color=chart_text_color),
-                    titlefont=dict(color=chart_text_color)
+                    title=dict(text="Total Requests", font=dict(color=chart_text_color)),
+                    tickfont=dict(color=chart_text_color)
                 ),
                 yaxis=dict(
                     showgrid=False,
