@@ -5,11 +5,15 @@
 # Set to False for live production mode
 DEMO_MODE = True
 
+# Enable auto-refresh during demo (for live simulator demo)
+# Set to True to show live updates from demo_simulator.py
+DEMO_AUTO_REFRESH = True
+
 # When DEMO_MODE is True:
-# - Dashboard shows sample data
-# - No real-time monitoring
+# - Dashboard shows DEMO MODE indicator (yellow)
 # - Safe to demo without actual email processing
-# - Auto-refresh is disabled
+# - If DEMO_AUTO_REFRESH is True: Dashboard refreshes every 5s
+# - If DEMO_AUTO_REFRESH is False: No auto-refresh (static)
 
 # When DEMO_MODE is False:
 # - Dashboard connects to live data

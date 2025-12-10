@@ -8,9 +8,10 @@ import os
 
 # ==================== DEMO MODE CONFIG ====================
 try:
-    from config import DEMO_MODE
+    from config import DEMO_MODE, DEMO_AUTO_REFRESH
 except ImportError:
     DEMO_MODE = False  # Default to live mode if config doesn't exist
+    DEMO_AUTO_REFRESH = True
 
 # ==================== PAGE CONFIG ====================
 st.set_page_config(
@@ -20,8 +21,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Auto-refresh every 5 seconds (ONLY in live mode)
-if not DEMO_MODE:
+# Auto-refresh every 5 seconds (in live mode OR demo with auto-refresh enabled)
+if not DEMO_MODE or DEMO_AUTO_REFRESH:
     import time
     if 'last_refresh' not in st.session_state:
         st.session_state.last_refresh = time.time()
@@ -30,6 +31,7 @@ if not DEMO_MODE:
     if time.time() - st.session_state.last_refresh > 5:
         st.session_state.last_refresh = time.time()
         st.rerun()
+
 
 # ==================== THEME TOGGLE ====================
 if 'theme' not in st.session_state:
@@ -259,14 +261,26 @@ with col1:
     st.markdown("<h1>🚀 SAMI Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
 with col2:
     if DEMO_MODE:
-        st.markdown(f"""
-        <div style='text-align: right; padding-top: 1rem;'>
-            <span style='display: inline-block; width: 10px; height: 10px; background: #fbbf24; border-radius: 50%; margin-right: 8px;'></span>
-            <span style='color: #fbbf24; font-weight: 600;'>DEMO MODE</span>
-            <br>
-            <span style='color: #a0aec0; font-size: 0.8rem;'>Safe for demonstration</span>
-        </div>
-        """, unsafe_allow_html=True)
+        if DEMO_AUTO_REFRESH:
+            # Demo with live updates - green pulsing indicator
+            st.markdown(f"""
+            <div style='text-align: right; padding-top: 1rem;'>
+                <span class='live-indicator'></span>
+                <span style='color: #10b981; font-weight: 600;'>DEMO LIVE</span>
+                <br>
+                <span style='color: #a0aec0; font-size: 0.8rem;'>Auto-refresh: ON</span>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            # Demo without auto-refresh - yellow static indicator
+            st.markdown(f"""
+            <div style='text-align: right; padding-top: 1rem;'>
+                <span style='display: inline-block; width: 10px; height: 10px; background: #fbbf24; border-radius: 50%; margin-right: 8px;'></span>
+                <span style='color: #fbbf24; font-weight: 600;'>DEMO MODE</span>
+                <br>
+                <span style='color: #a0aec0; font-size: 0.8rem;'>Auto-refresh: OFF</span>
+            </div>
+            """, unsafe_allow_html=True)
     else:
         st.markdown(f"""
         <div style='text-align: right; padding-top: 1rem;'>
