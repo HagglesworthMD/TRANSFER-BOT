@@ -37,20 +37,39 @@ REQUESTS = [
     "Cardiac Imaging Transfer"
 ]
 
+# Urgent requests with clinical risk keywords (triggers CRITICAL detection)
+URGENT_REQUESTS = [
+    "STAT CT Brain - Suspected Stroke",
+    "URGENT MRI Spine - Cord Compression Query",
+    "STAT Cardiac CT - Chest Pain Query",
+    "URGENT Fetal MRI - Immediate Review Required",
+    "STAT CT Angio - Ruptured AAA Query"
+]
+
 PATIENTS = ["Smith J", "Brown M", "Wilson S", "Davis T", "Johnson R"]
 
+email_count = 0  # Track emails for urgent scheduling
 current_index = 0
 
 def add_assignment():
-    global current_index
+    global current_index, email_count
+    email_count += 1
     staff = STAFF[current_index % len(STAFF)]
     current_index += 1
     
     now = datetime.now()
     sender = random.choice(SENDERS)
-    request = random.choice(REQUESTS)
     patient = random.choice(PATIENTS)
-    subject = f"[Assigned: {staff}] {request} - Patient: {patient}"
+    
+    # Every 5th email is URGENT/CRITICAL
+    is_urgent = (email_count % 5 == 0)
+    
+    if is_urgent:
+        request = random.choice(URGENT_REQUESTS)
+        subject = f"🚨 [CRITICAL] [Assigned: {staff}] {request} - Patient: {patient}"
+    else:
+        request = random.choice(REQUESTS)
+        subject = f"[Assigned: {staff}] {request} - Patient: {patient}"
     
     with open('daily_stats.csv', 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -62,8 +81,11 @@ def add_assignment():
             sender
         ])
     
-    print(f"✅ NEW REQUEST assigned to {staff.split('@')[0]}")
-    return staff
+    if is_urgent:
+        print(f"🚨 CRITICAL REQUEST assigned to {staff.split('@')[0]}")
+    else:
+        print(f"✅ NEW REQUEST assigned to {staff.split('@')[0]}")
+    return staff, is_urgent
 
 def add_completion(staff):
     now = datetime.now()
@@ -94,7 +116,7 @@ if __name__ == "__main__":
     while True:
         try:
             # Add a new assignment
-            staff = add_assignment()
+            staff, was_urgent = add_assignment()
             pending_completions.append((staff, time.time()))
             
             # Random chance to complete an old one
@@ -103,10 +125,9 @@ if __name__ == "__main__":
                 time.sleep(1)
                 add_completion(old_staff)
             
-            # Wait 3-8 seconds before next
-            wait_time = random.randint(3, 8)
-            print(f"   (Next in {wait_time}s...)\n")
-            time.sleep(wait_time)
+            # Fixed 10 second interval for demo
+            print(f"   (Next in 10s...)\n")
+            time.sleep(10)
             
         except KeyboardInterrupt:
             print("\n\n🛑 Simulator stopped.")
