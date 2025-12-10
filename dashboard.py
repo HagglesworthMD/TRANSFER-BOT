@@ -1156,6 +1156,101 @@ if 'Sender' in df.columns:
     else:
         st.info("📭 No external sender data available yet. New requests will be tracked with sender information.")
 
+# ==================== RAW DATA VIEWER ====================
+st.markdown("---")
+col_data_title, col_data_info = st.columns([6, 1])
+with col_data_title:
+    st.markdown("### 📂 Raw Data Viewer")
+    st.markdown("*Live view of underlying CSV data*")
+with col_data_info:
+    with st.expander("ℹ️ Info"):
+        st.caption("Shows the actual data being processed. All dashboard metrics are calculated from this data in real-time.")
+
+with st.expander("🔍 **Click to View Raw Data**", expanded=False):
+    # Data stats
+    col_stat1, col_stat2, col_stat3, col_stat4 = st.columns(4)
+    with col_stat1:
+        st.metric("Total Records", len(df))
+    with col_stat2:
+        st.metric("Assignments", len(df[df['Assigned To'] != 'completed']))
+    with col_stat3:
+        st.metric("Completions", len(df[df['Assigned To'] == 'completed']))
+    with col_stat4:
+        st.metric("Unique Staff", df[df['Assigned To'] != 'completed']['Assigned To'].nunique())
+    
+    st.markdown("---")
+    
+    # Filtering options
+    col_filter1, col_filter2, col_filter3 = st.columns(3)
+    
+    with col_filter1:
+        show_type = st.selectbox(
+            "Filter by Type",
+            ["All", "Assignments Only", "Completions Only"],
+            key="data_type_filter"
+        )
+    
+    with col_filter2:
+        date_options = ["All Dates"] + sorted(df['Date'].unique().tolist(), reverse=True)
+        selected_date = st.selectbox(
+            "Filter by Date",
+            date_options,
+            key="data_date_filter"
+        )
+    
+    with col_filter3:
+        staff_options = ["All Staff"] + sorted([s for s in df['Assigned To'].unique() if s != 'completed'])
+        selected_staff = st.selectbox(
+            "Filter by Staff",
+            staff_options,
+            key="data_staff_filter"
+        )
+    
+    # Apply filters
+    filtered_df = df.copy()
+    
+    if show_type == "Assignments Only":
+        filtered_df = filtered_df[filtered_df['Assigned To'] != 'completed']
+    elif show_type == "Completions Only":
+        filtered_df = filtered_df[filtered_df['Assigned To'] == 'completed']
+    
+    if selected_date != "All Dates":
+        filtered_df = filtered_df[filtered_df['Date'] == selected_date]
+    
+    if selected_staff != "All Staff":
+        filtered_df = filtered_df[filtered_df['Assigned To'] == selected_staff]
+    
+    # Display count after filtering
+    st.caption(f"Showing {len(filtered_df)} of {len(df)} records")
+    
+    # Display the data
+    display_df = filtered_df[['Date', 'Time', 'Assigned To', 'Sender', 'Subject']].copy()
+    display_df = display_df.sort_values(['Date', 'Time'], ascending=[False, False])
+    
+    # Truncate subject for display
+    display_df['Subject'] = display_df['Subject'].apply(lambda x: x[:60] + "..." if len(str(x)) > 60 else x)
+    
+    # Colour code rows
+    def highlight_completed(row):
+        if row['Assigned To'] == 'completed':
+            return ['background-color: rgba(16, 185, 129, 0.2)'] * len(row)
+        return [''] * len(row)
+    
+    st.dataframe(
+        display_df.style.apply(highlight_completed, axis=1),
+        use_container_width=True,
+        height=400
+    )
+    
+    # CSV download
+    st.download_button(
+        label="📥 Download Filtered Data",
+        data=filtered_df.to_csv(index=False).encode('utf-8'),
+        file_name=f"transfer_data_filtered_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
+        mime="text/csv",
+        use_container_width=True
+    )
+
 # ==================== FOOTER ====================
 st.markdown("---")
 st.markdown(f"""
