@@ -672,14 +672,8 @@ if not df_today.empty:
     this_week_count = len(this_week_df)
     last_week_count = len(last_week_df)
     
-    this_week_completed = len(this_week_df[this_week_df['Assigned To'] == 'STAFF-REPLY'])
-    last_week_completed = len(last_week_df[last_week_df['Assigned To'] == 'STAFF-REPLY'])
-    
     # Calculate changes
     volume_change = ((this_week_count - last_week_count) / last_week_count * 100) if last_week_count > 0 else 0
-    completion_rate_this = (this_week_completed / this_week_count * 100) if this_week_count > 0 else 0
-    completion_rate_last = (last_week_completed / last_week_count * 100) if last_week_count > 0 else 0
-    completion_change = completion_rate_this - completion_rate_last
     
     col_wow1, col_wow2, col_wow3, col_wow4 = st.columns(4)
     
@@ -692,11 +686,21 @@ if not df_today.empty:
         )
     
     with col_wow2:
+        # Find peak day this week
+        if len(this_week_df) > 0:
+            daily_counts = this_week_df.groupby('Date').size()
+            peak_day = daily_counts.idxmax()
+            peak_count = daily_counts.max()
+            # Format date nicely
+            peak_day_name = pd.to_datetime(peak_day).strftime('%A')[:3]
+        else:
+            peak_day_name = "N/A"
+            peak_count = 0
+        
         st.metric(
-            "Completion Rate",
-            f"{completion_rate_this:.0f}%",
-            delta=f"{completion_change:+.0f}% vs last week",
-            delta_color="normal" if completion_change >= 0 else "inverse"
+            "Peak Day",
+            f"{peak_day_name}",
+            delta=f"{peak_count} requests"
         )
     
     with col_wow3:
