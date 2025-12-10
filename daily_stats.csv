@@ -1,355 +1,350 @@
 Date,Time,Subject,Assigned To,Sender
-2025-12-04,11:48:32,[Assigned: brian.shaw@sa.gov.au] CT Scan Transfer Request - Patient: Taylor L,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-04,11:54:59,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,jason.quinn2@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,12:01:49,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Walker D,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-04,10:15:51,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-04,14:06:13,[Assigned: diana.wonderwoman@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Baker P,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,10:18:59,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Lopez M,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,11:29:10,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Scott R,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,07:01:24,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Hill C,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,09:53:20,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Taylor L,max.power@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,08:39:25,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-04,15:01:22,[Assigned: jason.quinn2@sa.gov.au] Cardiac Imaging Transfer - Patient: King S,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-04,15:34:56,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Adams K,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,15:48:09,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Johnson R,chuck.norris@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-04,11:17:40,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Wright J,diana.wonderwoman@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,09:19:04,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Johnson R,tony.baloney@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-04,08:15:19,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Hall G,frank.beans@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-04,10:37:07,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Adams K,stella.artois@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-04,13:35:18,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Johnson R,max.power@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-04,11:29:28,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Walker D,brian.shaw@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-04,09:27:28,[Assigned: jason.quinn2@sa.gov.au] Cardiac Imaging Transfer - Patient: Taylor L,jason.quinn2@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,09:23:47,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Martin B,betty.spaghetti@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-04,14:03:56,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-04,10:20:48,[Assigned: diana.wonderwoman@sa.gov.au] Mammography Transfer - Patient: Walker D,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-04,14:16:29,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,11:12:48,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Green A,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-04,10:02:41,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Williams K,stella.artois@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-04,12:08:42,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,max.power@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-04,11:13:52,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Green A,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,16:17:04,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Taylor L,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-04,10:36:54,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Scott R,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,09:13:48,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Wright J,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,13:47:12,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Jones P,diana.wonderwoman@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-04,14:05:09,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,10:16:06,[Assigned: frank.beans@sa.gov.au] X-Ray Transfer Request - Patient: Anderson C,frank.beans@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,08:47:24,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Adams K,stella.artois@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-04,09:34:43,[Assigned: max.power@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,max.power@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-04,10:54:07,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Moore A,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-04,07:47:36,[Assigned: jason.quinn2@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,jason.quinn2@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,08:52:35,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,betty.spaghetti@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-04,08:59:05,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Baker P,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,16:02:00,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Williams K,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
-2025-12-04,12:19:43,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-04,10:16:18,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Walker D,frank.beans@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,09:02:45,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Davis T,stella.artois@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,09:22:23,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Taylor L,max.power@sa.gov.au,central.imaging@sa.gov.au
-2025-12-04,07:57:00,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Wright J,brian.shaw@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-04,08:28:08,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Williams K,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-04,09:08:18,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Moore A,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-04,12:38:21,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-04,12:47:53,[Assigned: diana.wonderwoman@sa.gov.au] Mammography Transfer - Patient: Walker D,diana.wonderwoman@sa.gov.au,bone.density@sa.gov.au
-2025-12-04,14:00:06,[Assigned: tony.baloney@sa.gov.au] Pediatric CT Transfer - Patient: Jones P,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-05,14:46:27,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Wright J,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,08:38:54,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Johnson R,stella.artois@sa.gov.au,central.imaging@sa.gov.au
-2025-12-05,10:37:08,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Wilson S,max.power@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,08:46:48,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-05,11:49:07,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Hall G,jason.quinn2@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,09:44:44,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Walker D,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-05,14:58:51,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Wilson S,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,15:17:49,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Taylor L,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,15:10:21,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Jones P,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-05,09:21:23,[Assigned: frank.beans@sa.gov.au] RAH Emergency US Transfer - Patient: Smith J,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-05,08:22:27,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Johnson R,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-05,12:38:08,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Anderson C,max.power@sa.gov.au,bone.density@sa.gov.au
-2025-12-05,12:38:58,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,brian.shaw@sa.gov.au,breast.screen@sa.gov.au
-2025-12-05,15:02:02,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Green A,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-05,15:35:47,[Assigned: betty.spaghetti@sa.gov.au] CT Scan Transfer Request - Patient: Smith J,betty.spaghetti@sa.gov.au,central.imaging@sa.gov.au
-2025-12-05,09:22:23,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Allen W,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
-2025-12-05,11:31:34,[Assigned: john.drousas@sa.gov.au] MRI Transfer - Patient: Jones P,john.drousas@sa.gov.au,central.imaging@sa.gov.au
-2025-12-05,15:47:44,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-05,12:14:00,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Johnson R,tony.baloney@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-05,11:32:43,[Assigned: frank.beans@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,frank.beans@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-05,07:51:50,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Jones P,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-05,13:29:38,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Allen W,max.power@sa.gov.au,breast.screen@sa.gov.au
-2025-12-05,16:14:27,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Allen W,brian.shaw@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-05,12:36:56,[Assigned: jason.quinn2@sa.gov.au] RAH Emergency US Transfer - Patient: Anderson C,jason.quinn2@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-05,09:00:16,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Johnson R,betty.spaghetti@sa.gov.au,breast.screen@sa.gov.au
-2025-12-05,12:30:31,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: King S,chuck.norris@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-05,08:14:56,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,08:44:16,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Brown M,tony.baloney@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,07:09:28,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Hill C,frank.beans@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,12:14:12,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Wilson S,stella.artois@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-05,08:47:28,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Scott R,max.power@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,07:27:05,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: King S,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,11:43:08,[Assigned: jason.quinn2@sa.gov.au] X-Ray Transfer Request - Patient: Walker D,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,07:10:32,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,betty.spaghetti@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-05,09:42:31,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Brown M,chuck.norris@sa.gov.au,bone.density@sa.gov.au
-2025-12-05,07:22:43,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Moore A,diana.wonderwoman@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-05,09:46:55,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Lee H,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
-2025-12-05,08:29:07,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Hill C,frank.beans@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-05,08:15:36,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Johnson R,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,11:57:44,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Hall G,max.power@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,09:14:08,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Davis T,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,11:01:44,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Hill C,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,09:11:45,[Assigned: betty.spaghetti@sa.gov.au] CT Scan Transfer Request - Patient: Young E,betty.spaghetti@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-05,08:04:07,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Taylor L,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-05,15:02:16,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Anderson C,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-05,10:41:34,[Assigned: tony.baloney@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-05,07:43:39,[Assigned: frank.beans@sa.gov.au] RAH Emergency US Transfer - Patient: Smith J,frank.beans@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-05,12:03:12,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Scott R,stella.artois@sa.gov.au,bone.density@sa.gov.au
-2025-12-05,10:57:33,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,max.power@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,08:59:09,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Adams K,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-05,09:57:15,[Assigned: jason.quinn2@sa.gov.au] Ultrasound Transfer - Patient: Wilson S,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,10:28:54,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Wilson S,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-05,12:52:20,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Martin B,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-05,07:55:49,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Anderson C,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,07:29:17,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Allen W,tony.baloney@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,12:44:22,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Wilson S,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-06,13:14:05,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Baker P,stella.artois@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-06,14:58:54,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Lopez M,max.power@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,16:18:25,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,15:29:54,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Lee H,jason.quinn2@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-06,09:37:53,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Lopez M,betty.spaghetti@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-06,10:48:49,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Lopez M,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-06,11:32:50,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-06,16:17:34,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-06,09:17:05,[Assigned: frank.beans@sa.gov.au] Mammography Transfer - Patient: Taylor L,frank.beans@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-06,09:54:33,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Anderson C,stella.artois@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-06,10:13:33,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Moore A,max.power@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,09:57:15,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Adams K,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,10:16:40,[Assigned: jason.quinn2@sa.gov.au] X-Ray Transfer Request - Patient: King S,jason.quinn2@sa.gov.au,bone.density@sa.gov.au
-2025-12-06,09:54:21,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Baker P,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,15:41:26,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-06,08:25:00,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Smith J,diana.wonderwoman@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-06,17:24:22,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Lee H,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-06,07:37:37,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Johnson R,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,12:44:40,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Anderson C,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,11:35:29,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Davis T,max.power@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,09:36:17,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Moore A,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,09:08:32,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Lee H,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-06,07:16:01,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Lopez M,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,11:51:58,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Hill C,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-06,14:40:00,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,diana.wonderwoman@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-06,08:42:46,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Scott R,tony.baloney@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-06,10:49:54,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Walker D,frank.beans@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,09:18:54,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Allen W,stella.artois@sa.gov.au,central.imaging@sa.gov.au
-2025-12-06,08:23:24,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Hall G,max.power@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,07:22:39,[Assigned: brian.shaw@sa.gov.au] CT Scan Transfer Request - Patient: Hill C,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-06,07:22:10,[Assigned: jason.quinn2@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-06,09:54:46,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-06,10:09:56,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Jones P,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-06,07:04:37,[Assigned: diana.wonderwoman@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Hall G,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
-2025-12-06,11:58:18,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,tony.baloney@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,13:30:57,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Johnson R,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-06,16:15:49,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: King S,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-06,10:19:46,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Adams K,max.power@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-06,13:59:33,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Jones P,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-06,11:00:16,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Lopez M,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-06,14:02:10,[Assigned: betty.spaghetti@sa.gov.au] CT Scan Transfer Request - Patient: Lee H,betty.spaghetti@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-06,10:56:12,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Young E,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,12:34:18,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Lee H,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-06,08:41:26,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-06,10:21:02,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Anderson C,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,09:32:36,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Williams K,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-06,08:55:10,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: King S,max.power@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-07,10:05:13,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Lopez M,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-07,15:44:26,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: King S,jason.quinn2@sa.gov.au,breast.screen@sa.gov.au
-2025-12-07,10:48:38,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Scott R,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,07:10:58,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: Taylor L,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,10:49:36,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Wilson S,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
-2025-12-07,11:46:38,[Assigned: tony.baloney@sa.gov.au] Pediatric CT Transfer - Patient: Martin B,tony.baloney@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-07,16:34:03,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: King S,frank.beans@sa.gov.au,breast.screen@sa.gov.au
-2025-12-07,12:33:23,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Young E,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-07,09:00:45,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Moore A,max.power@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-07,15:08:39,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Allen W,brian.shaw@sa.gov.au,breast.screen@sa.gov.au
-2025-12-07,10:16:20,[Assigned: jason.quinn2@sa.gov.au] Cardiac Imaging Transfer - Patient: Hall G,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-07,10:16:18,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Young E,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-07,11:20:48,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Johnson R,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-07,15:49:47,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Adams K,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,08:03:16,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Moore A,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-07,08:41:16,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Young E,frank.beans@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,09:06:58,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Anderson C,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-07,09:33:11,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Anderson C,max.power@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-07,08:42:53,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Walker D,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-07,09:01:29,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-07,08:31:25,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Young E,betty.spaghetti@sa.gov.au,central.imaging@sa.gov.au
-2025-12-07,13:04:16,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Young E,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-07,09:03:34,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Lopez M,diana.wonderwoman@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-07,12:41:41,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Adams K,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,10:45:59,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Moore A,frank.beans@sa.gov.au,central.imaging@sa.gov.au
-2025-12-07,11:54:38,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-07,09:33:02,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Brown M,max.power@sa.gov.au,central.imaging@sa.gov.au
-2025-12-07,17:24:43,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Thomas N,brian.shaw@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,14:21:54,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Baker P,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,10:07:19,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Young E,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-07,11:52:35,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Williams K,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-07,12:49:24,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,diana.wonderwoman@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-07,08:35:22,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Hall G,tony.baloney@sa.gov.au,bone.density@sa.gov.au
-2025-12-07,15:25:59,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Martin B,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-07,10:09:55,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Johnson R,stella.artois@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,15:17:21,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Lopez M,max.power@sa.gov.au,central.imaging@sa.gov.au
-2025-12-07,09:31:22,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Moore A,brian.shaw@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,11:35:26,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Williams K,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,11:27:34,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Wilson S,betty.spaghetti@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-07,13:42:05,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
-2025-12-07,09:23:14,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Hill C,diana.wonderwoman@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-07,12:24:39,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Adams K,tony.baloney@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-07,12:18:07,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Smith J,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-07,09:45:52,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Brown M,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,10:14:59,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Davis T,max.power@sa.gov.au,bone.density@sa.gov.au
-2025-12-07,14:01:26,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Hill C,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-07,09:34:58,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,jason.quinn2@sa.gov.au,bone.density@sa.gov.au
-2025-12-07,08:57:04,[Assigned: betty.spaghetti@sa.gov.au] MRI Transfer - Patient: Allen W,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-07,09:17:13,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Taylor L,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,07:20:49,[Assigned: diana.wonderwoman@sa.gov.au] RAH Emergency US Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-07,14:30:31,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Moore A,tony.baloney@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-07,08:27:22,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Wright J,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-07,08:17:04,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,stella.artois@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,11:46:40,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Hall G,max.power@sa.gov.au,central.imaging@sa.gov.au
-2025-12-08,13:45:13,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Moore A,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,10:56:31,[Assigned: john.drousas@sa.gov.au] Pediatric CT Transfer - Patient: Young E,john.drousas@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-08,07:27:11,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Scott R,jason.quinn2@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-08,11:40:06,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Lee H,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,07:10:51,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Baker P,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-08,11:51:59,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Martin B,diana.wonderwoman@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-08,09:17:00,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Brown M,tony.baloney@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,12:57:53,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: King S,frank.beans@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-08,10:35:37,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Thomas N,stella.artois@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-08,09:43:09,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Williams K,max.power@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-08,15:55:14,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Martin B,brian.shaw@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-08,13:45:45,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,jason.quinn2@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,13:46:56,[Assigned: betty.spaghetti@sa.gov.au] CT Scan Transfer Request - Patient: Wright J,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,11:36:06,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Hall G,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-08,10:25:18,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Smith J,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,09:06:55,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Scott R,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-08,07:30:27,[Assigned: frank.beans@sa.gov.au] X-Ray Transfer Request - Patient: Walker D,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,15:05:58,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Jones P,stella.artois@sa.gov.au,bone.density@sa.gov.au
-2025-12-08,10:17:06,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,max.power@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,08:13:44,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Scott R,brian.shaw@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-08,07:58:56,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-08,12:33:28,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Smith J,betty.spaghetti@sa.gov.au,central.imaging@sa.gov.au
-2025-12-08,09:07:35,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-08,07:26:13,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Young E,diana.wonderwoman@sa.gov.au,bone.density@sa.gov.au
-2025-12-08,12:05:42,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Wright J,tony.baloney@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-08,08:59:02,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Smith J,frank.beans@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-08,10:23:41,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Lee H,stella.artois@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-08,12:00:01,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Brown M,max.power@sa.gov.au,breast.screen@sa.gov.au
-2025-12-08,07:59:02,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Young E,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,09:18:06,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Adams K,jason.quinn2@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-08,13:46:00,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Scott R,betty.spaghetti@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-08,16:16:11,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Walker D,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-08,16:35:11,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: King S,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-08,12:49:41,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Adams K,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
-2025-12-08,08:51:48,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Allen W,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-08,13:15:56,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Young E,stella.artois@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,11:15:24,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Walker D,max.power@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-08,07:38:49,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-08,11:27:10,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-08,15:23:20,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Wilson S,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-08,13:11:30,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-08,10:14:06,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Baker P,diana.wonderwoman@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-08,15:32:59,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Lee H,tony.baloney@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-08,10:11:22,[Assigned: frank.beans@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Adams K,frank.beans@sa.gov.au,central.imaging@sa.gov.au
-2025-12-08,10:20:40,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Martin B,stella.artois@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-08,11:27:10,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Taylor L,max.power@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-08,13:34:34,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,brian.shaw@sa.gov.au,bone.density@sa.gov.au
-2025-12-09,08:24:45,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Hall G,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-09,12:09:15,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Anderson C,betty.spaghetti@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-09,09:06:18,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Green A,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,07:58:12,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Wilson S,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-09,14:56:31,[Assigned: tony.baloney@sa.gov.au] Pediatric CT Transfer - Patient: Adams K,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,12:52:37,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Adams K,frank.beans@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-09,08:28:25,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Young E,stella.artois@sa.gov.au,breast.screen@sa.gov.au
-2025-12-09,08:56:18,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Wilson S,max.power@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-09,12:45:22,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,brian.shaw@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,13:33:17,[Assigned: jason.quinn2@sa.gov.au] RAH Emergency US Transfer - Patient: Allen W,jason.quinn2@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-09,07:59:07,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: King S,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-09,07:07:07,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Smith J,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-09,17:17:38,[Assigned: diana.wonderwoman@sa.gov.au] Mammography Transfer - Patient: Walker D,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-09,11:13:27,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Green A,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
-2025-12-09,09:52:00,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Thomas N,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-09,12:06:21,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Green A,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-09,07:44:48,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Moore A,max.power@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-09,08:00:20,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Johnson R,brian.shaw@sa.gov.au,bone.density@sa.gov.au
-2025-12-09,11:28:41,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Young E,jason.quinn2@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-09,10:04:43,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Thomas N,betty.spaghetti@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-09,12:30:12,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Wilson S,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-09,08:36:11,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Smith J,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-09,14:35:34,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Moore A,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-09,10:45:41,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Baker P,frank.beans@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-09,10:12:29,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Adams K,stella.artois@sa.gov.au,breast.screen@sa.gov.au
-2025-12-09,08:36:23,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Moore A,max.power@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-09,08:56:38,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Moore A,brian.shaw@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-09,09:32:05,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-09,12:12:38,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Lee H,betty.spaghetti@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-09,12:43:32,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Brown M,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-09,10:34:55,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Thomas N,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-09,12:31:58,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Thomas N,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-09,10:25:45,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Williams K,frank.beans@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-09,10:25:58,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Anderson C,stella.artois@sa.gov.au,breast.screen@sa.gov.au
-2025-12-09,11:48:38,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Lopez M,max.power@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-09,13:36:02,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Young E,brian.shaw@sa.gov.au,bone.density@sa.gov.au
-2025-12-09,15:25:29,[Assigned: jason.quinn2@sa.gov.au] Mammography Transfer - Patient: Hall G,jason.quinn2@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-09,08:53:40,[Assigned: betty.spaghetti@sa.gov.au] MRI Transfer - Patient: Williams K,betty.spaghetti@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-09,11:27:19,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Adams K,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,11:31:00,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
-2025-12-09,14:45:39,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Wilson S,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,13:21:20,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Moore A,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-09,08:15:55,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Brown M,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-09,12:01:02,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Young E,max.power@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-09,08:09:05,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-09,07:06:42,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Scott R,jason.quinn2@sa.gov.au,central.imaging@sa.gov.au
-2025-12-09,09:52:52,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Lee H,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-09,11:47:47,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Green A,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
-2025-12-09,07:49:51,[Assigned: diana.wonderwoman@sa.gov.au] Mammography Transfer - Patient: Wilson S,diana.wonderwoman@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-09,14:07:49,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
-2025-12-09,08:38:55,[Assigned: frank.beans@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Moore A,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,08:10:00,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Taylor L,stella.artois@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-10,16:39:13,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Green A,max.power@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,13:39:16,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Lopez M,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,15:20:15,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Brown M,jason.quinn2@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,13:07:38,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Wright J,betty.spaghetti@sa.gov.au,breast.screen@sa.gov.au
-2025-12-10,08:49:56,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-10,14:11:06,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-10,08:58:01,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Taylor L,tony.baloney@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-10,08:16:17,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Brown M,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-10,07:56:02,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Taylor L,stella.artois@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-10,11:42:58,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Lee H,max.power@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-10,08:36:16,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Brown M,brian.shaw@sa.gov.au,bone.density@sa.gov.au
-2025-12-10,12:35:28,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Adams K,jason.quinn2@sa.gov.au,rah.emergency@sa.gov.au
-2025-12-10,16:30:03,[Assigned: betty.spaghetti@sa.gov.au] Ultrasound Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
-2025-12-10,08:20:31,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Smith J,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-10,10:31:49,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Scott R,diana.wonderwoman@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-10,17:01:55,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Johnson R,tony.baloney@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-10,07:30:56,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,07:49:58,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Williams K,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,11:10:29,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Baker P,max.power@sa.gov.au,central.imaging@sa.gov.au
-2025-12-10,10:15:11,[Assigned: brian.shaw@sa.gov.au] CT Scan Transfer Request - Patient: Brown M,brian.shaw@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,10:31:13,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: King S,jason.quinn2@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-10,10:35:03,[Assigned: betty.spaghetti@sa.gov.au] MRI Transfer - Patient: Lee H,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
-2025-12-10,14:26:38,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Brown M,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-10,12:54:08,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: Anderson C,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
-2025-12-10,10:26:04,[Assigned: tony.baloney@sa.gov.au] MRI Transfer - Patient: Johnson R,tony.baloney@sa.gov.au,modbury.radiology@sa.gov.au
-2025-12-10,12:13:15,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Allen W,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
-2025-12-10,14:06:32,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Wilson S,stella.artois@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-10,15:03:16,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,max.power@sa.gov.au,lyell.imaging@sa.gov.au
-2025-12-10,13:30:32,[Assigned: brian.shaw@sa.gov.au] CT Scan Transfer Request - Patient: Anderson C,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-10,12:29:35,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Brown M,jason.quinn2@sa.gov.au,breast.screen@sa.gov.au
-2025-12-10,13:45:35,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,central.imaging@sa.gov.au
-2025-12-10,09:28:51,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: King S,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-10,17:28:25,[Assigned: diana.wonderwoman@sa.gov.au] RAH Emergency US Transfer - Patient: Moore A,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-10,10:06:23,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Young E,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
-2025-12-10,13:24:48,[Assigned: frank.beans@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Wilson S,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,10:49:11,[Assigned: stella.artois@sa.gov.au] Cardiac Imaging Transfer - Patient: Hall G,stella.artois@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,12:05:38,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Young E,max.power@sa.gov.au,bone.density@sa.gov.au
-2025-12-10,15:17:55,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Smith J,brian.shaw@sa.gov.au,breast.screen@sa.gov.au
-2025-12-10,09:32:42,[Assigned: john.drousas@sa.gov.au] RAH Emergency US Transfer - Patient: Anderson C,john.drousas@sa.gov.au,jones.radiology@hospital.com.au
-2025-12-10,13:10:21,[Assigned: jason.quinn2@sa.gov.au] X-Ray Transfer Request - Patient: King S,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
-2025-12-10,11:43:15,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Lopez M,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,09:08:19,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Thomas N,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
-2025-12-10,08:03:53,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Walker D,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
-2025-12-10,07:21:02,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
-2025-12-10,07:01:07,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Wilson S,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
-2025-12-10,10:06:28,[Assigned: stella.artois@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Taylor L,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
-2025-12-10,10:31:01,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,max.power@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-04,11:07:18,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Moore A,frank.beans@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-04,14:58:04,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,14:50:02,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Hill C,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,16:18:16,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Hill C,diana.wonderwoman@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-04,11:51:28,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: King S,brian.shaw@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-04,11:24:58,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Young E,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-04,07:06:37,[Assigned: frank.beans@sa.gov.au] Mammography Transfer - Patient: Walker D,frank.beans@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-04,11:54:51,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: King S,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,07:46:44,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Wilson S,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-04,09:45:06,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: King S,betty.spaghetti@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-04,09:54:50,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Davis T,stella.artois@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-04,11:52:48,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Moore A,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-04,13:53:15,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Wilson S,brian.shaw@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,10:30:29,[Assigned: diana.wonderwoman@sa.gov.au] RAH Emergency US Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,08:56:05,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Hill C,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-04,07:49:23,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Adams K,tony.baloney@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-04,07:39:12,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Young E,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
+2025-12-04,10:46:35,[Assigned: john.drousas@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Williams K,john.drousas@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-04,11:57:36,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-04,09:33:32,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-04,10:17:37,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Young E,stella.artois@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-04,09:46:56,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Moore A,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-04,08:13:38,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Young E,chuck.norris@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-04,12:03:03,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Moore A,tony.baloney@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-04,08:08:55,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Green A,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-04,08:02:19,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Smith J,diana.wonderwoman@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-04,13:54:47,[Assigned: betty.spaghetti@sa.gov.au] Bone Density Scan Transfer - Patient: Baker P,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
+2025-12-04,11:18:01,[Assigned: john.drousas@sa.gov.au] Pediatric CT Transfer - Patient: Hall G,john.drousas@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-04,08:10:33,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
+2025-12-04,07:10:13,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Green A,max.power@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-04,09:26:12,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Jones P,tony.baloney@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,11:25:32,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Brown M,jason.quinn2@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-04,14:18:55,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Walker D,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,07:20:38,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-04,10:19:41,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Adams K,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,12:49:54,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Allen W,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,14:02:05,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Adams K,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-04,10:17:12,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Lee H,jason.quinn2@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,10:20:08,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Hill C,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,14:06:43,[Assigned: tony.baloney@sa.gov.au] Pediatric CT Transfer - Patient: Wright J,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-04,12:30:02,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Wright J,max.power@sa.gov.au,central.imaging@sa.gov.au
+2025-12-04,17:46:32,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: King S,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-04,12:31:26,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Green A,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-04,12:52:42,[Assigned: jason.quinn2@sa.gov.au] Mammography Transfer - Patient: Taylor L,jason.quinn2@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-04,07:10:17,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Anderson C,max.power@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-04,11:19:44,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Scott R,tony.baloney@sa.gov.au,bone.density@sa.gov.au
+2025-12-05,14:40:47,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,stella.artois@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-05,09:22:46,[Assigned: frank.beans@sa.gov.au] MRI Transfer - Patient: Lee H,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-05,12:08:14,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Scott R,tony.baloney@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,13:53:39,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Baker P,max.power@sa.gov.au,breast.screen@sa.gov.au
+2025-12-05,09:16:02,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Johnson R,diana.wonderwoman@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-05,10:02:34,[Assigned: betty.spaghetti@sa.gov.au] Ultrasound Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-05,12:12:25,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Davis T,frank.beans@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,14:34:19,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Smith J,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
+2025-12-05,07:30:49,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: King S,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-05,14:53:13,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Martin B,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,12:23:38,[Assigned: stella.artois@sa.gov.au] Cardiac Imaging Transfer - Patient: King S,stella.artois@sa.gov.au,bone.density@sa.gov.au
+2025-12-05,09:18:57,[Assigned: diana.wonderwoman@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Jones P,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,13:01:41,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Moore A,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,12:34:44,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: King S,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,08:46:16,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Anderson C,frank.beans@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-05,11:37:53,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Williams K,max.power@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-05,14:50:40,[Assigned: frank.beans@sa.gov.au] CT Scan Transfer Request - Patient: Johnson R,frank.beans@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-05,12:57:56,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Jones P,max.power@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-05,11:28:00,[Assigned: john.drousas@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Baker P,john.drousas@sa.gov.au,bone.density@sa.gov.au
+2025-12-05,07:14:58,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Johnson R,diana.wonderwoman@sa.gov.au,breast.screen@sa.gov.au
+2025-12-05,10:45:23,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-05,09:58:33,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-05,07:24:56,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Scott R,chuck.norris@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-05,13:49:51,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Green A,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-05,10:30:35,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Taylor L,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-05,09:14:22,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Allen W,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-05,11:17:23,[Assigned: brian.shaw@sa.gov.au] Mammography Transfer - Patient: Walker D,brian.shaw@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-05,09:18:18,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Young E,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,07:54:05,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Smith J,max.power@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-05,09:47:09,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Taylor L,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,12:27:05,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Young E,tony.baloney@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-05,10:22:41,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Jones P,frank.beans@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,07:53:55,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
+2025-12-05,12:16:53,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-05,11:38:02,[Assigned: john.drousas@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,john.drousas@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-05,09:38:48,[Assigned: diana.wonderwoman@sa.gov.au] RAH Emergency US Transfer - Patient: Jones P,diana.wonderwoman@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,17:56:18,[Assigned: john.drousas@sa.gov.au] RAH Emergency US Transfer - Patient: Hill C,john.drousas@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-05,17:17:22,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Davis T,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-05,13:25:08,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Brown M,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,13:16:09,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Brown M,stella.artois@sa.gov.au,central.imaging@sa.gov.au
+2025-12-05,10:20:25,[Assigned: betty.spaghetti@sa.gov.au] Ultrasound Transfer - Patient: Johnson R,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-05,13:02:12,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Thomas N,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-05,10:53:08,[Assigned: jason.quinn2@sa.gov.au] Mammography Transfer - Patient: King S,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-05,07:59:30,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Scott R,tony.baloney@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-05,09:52:22,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Williams K,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-05,07:20:55,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-05,16:08:02,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: King S,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-05,10:35:40,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: King S,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-05,09:47:04,[Assigned: stella.artois@sa.gov.au] Cardiac Imaging Transfer - Patient: King S,stella.artois@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-05,09:36:23,[Assigned: brian.shaw@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Brown M,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-06,11:50:40,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Green A,betty.spaghetti@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,09:14:12,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Brown M,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,11:49:23,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Smith J,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-06,09:53:26,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Walker D,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-06,08:16:12,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Anderson C,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,10:19:25,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-06,09:10:45,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Baker P,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,08:45:48,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Scott R,diana.wonderwoman@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,09:58:58,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Lopez M,jason.quinn2@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,08:51:13,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: Moore A,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-06,10:31:32,[Assigned: brian.shaw@sa.gov.au] CT Scan Transfer Request - Patient: Baker P,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-06,09:04:00,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: King S,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-06,14:53:13,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,chuck.norris@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-06,09:21:31,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Brown M,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,07:51:02,[Assigned: frank.beans@sa.gov.au] X-Ray Transfer Request - Patient: Baker P,frank.beans@sa.gov.au,central.imaging@sa.gov.au
+2025-12-06,11:13:48,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Thomas N,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-06,11:52:51,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Lee H,max.power@sa.gov.au,bone.density@sa.gov.au
+2025-12-06,10:11:39,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Taylor L,max.power@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,07:21:41,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Johnson R,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-06,08:42:01,[Assigned: tony.baloney@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Smith J,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,08:46:13,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: Anderson C,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,09:22:43,[Assigned: frank.beans@sa.gov.au] X-Ray Transfer Request - Patient: Smith J,frank.beans@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,12:23:50,[Assigned: brian.shaw@sa.gov.au] Mammography Transfer - Patient: Lee H,brian.shaw@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-06,14:14:03,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Adams K,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-06,15:55:27,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,stella.artois@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-06,14:28:47,[Assigned: jason.quinn2@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,jason.quinn2@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,08:59:07,[Assigned: brian.shaw@sa.gov.au] Mammography Transfer - Patient: Williams K,brian.shaw@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,12:24:08,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Lee H,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-06,12:45:33,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: Lopez M,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,07:40:14,[Assigned: frank.beans@sa.gov.au] RAH Emergency US Transfer - Patient: Thomas N,frank.beans@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-06,10:26:36,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,max.power@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-06,07:49:54,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Hill C,chuck.norris@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-06,10:46:45,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: King S,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-06,12:14:08,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,betty.spaghetti@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,10:11:45,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Thomas N,stella.artois@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,11:56:40,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Anderson C,tony.baloney@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-06,11:16:48,[Assigned: stella.artois@sa.gov.au] Cardiac Imaging Transfer - Patient: Hill C,stella.artois@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,15:27:55,[Assigned: tony.baloney@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,tony.baloney@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-06,14:31:25,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,07:56:30,[Assigned: tony.baloney@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-06,09:40:33,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Williams K,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,07:43:13,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Davis T,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-06,13:15:16,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Martin B,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-06,08:49:19,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,09:58:51,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Anderson C,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,10:07:12,[Assigned: john.drousas@sa.gov.au] CT Scan Transfer Request - Patient: Scott R,john.drousas@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-06,14:23:33,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Green A,betty.spaghetti@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-06,07:52:00,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Wright J,max.power@sa.gov.au,breast.screen@sa.gov.au
+2025-12-06,15:00:20,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,betty.spaghetti@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-06,10:04:29,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Brown M,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-06,10:09:40,[Assigned: jason.quinn2@sa.gov.au] Cardiac Imaging Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-06,14:28:15,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Smith J,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-07,09:01:54,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: King S,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-07,13:31:39,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Young E,brian.shaw@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-07,10:58:40,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Wilson S,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,07:47:22,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Wright J,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,11:36:22,[Assigned: jason.quinn2@sa.gov.au] Mammography Transfer - Patient: Thomas N,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-07,10:41:43,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Baker P,max.power@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-07,08:07:32,[Assigned: john.drousas@sa.gov.au] Ultrasound Transfer - Patient: Adams K,john.drousas@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-07,11:30:59,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-07,08:00:04,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Taylor L,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-07,17:33:51,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Brown M,brian.shaw@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-07,09:35:29,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Smith J,max.power@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-07,08:05:17,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Moore A,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-07,07:33:38,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Green A,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-07,12:38:23,[Assigned: diana.wonderwoman@sa.gov.au] Cardiac Imaging Transfer - Patient: Green A,diana.wonderwoman@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-07,12:35:08,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Lopez M,brian.shaw@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-07,13:26:52,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-07,13:24:38,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Green A,max.power@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-07,08:14:57,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Thomas N,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-07,09:29:45,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Thomas N,max.power@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-07,10:37:29,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Lee H,max.power@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-07,10:15:25,[Assigned: john.drousas@sa.gov.au] Mammography Transfer - Patient: Smith J,john.drousas@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,14:18:10,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Young E,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-07,07:25:05,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: King S,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-07,12:05:48,[Assigned: stella.artois@sa.gov.au] Pediatric CT Transfer - Patient: Brown M,stella.artois@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-07,09:56:23,[Assigned: frank.beans@sa.gov.au] Mammography Transfer - Patient: Green A,frank.beans@sa.gov.au,bone.density@sa.gov.au
+2025-12-07,08:34:20,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Anderson C,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-07,14:24:42,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: Green A,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-07,13:12:06,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Allen W,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
+2025-12-07,13:05:03,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Davis T,chuck.norris@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-07,16:34:52,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Thomas N,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,10:15:55,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: Hall G,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-07,13:53:28,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: King S,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-07,07:49:42,[Assigned: max.power@sa.gov.au] Ultrasound Transfer - Patient: Baker P,max.power@sa.gov.au,bone.density@sa.gov.au
+2025-12-07,11:23:29,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Anderson C,chuck.norris@sa.gov.au,bone.density@sa.gov.au
+2025-12-07,12:01:26,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Baker P,max.power@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,08:56:47,[Assigned: stella.artois@sa.gov.au] Bone Density Scan Transfer - Patient: Moore A,stella.artois@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-07,14:01:54,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Martin B,brian.shaw@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-07,15:59:26,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Anderson C,max.power@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-07,07:51:05,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,brian.shaw@sa.gov.au,bone.density@sa.gov.au
+2025-12-07,14:19:07,[Assigned: brian.shaw@sa.gov.au] Mammography Transfer - Patient: Brown M,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-07,07:06:36,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Moore A,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-07,10:32:01,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Williams K,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-07,12:27:32,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Allen W,max.power@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,10:42:57,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Baker P,chuck.norris@sa.gov.au,bone.density@sa.gov.au
+2025-12-07,07:12:26,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Adams K,max.power@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-07,10:02:35,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Smith J,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
+2025-12-07,07:35:41,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Young E,brian.shaw@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,08:28:56,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Wright J,tony.baloney@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-07,13:09:20,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Jones P,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-08,12:16:58,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Anderson C,chuck.norris@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-08,07:26:31,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,betty.spaghetti@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-08,10:41:03,[Assigned: stella.artois@sa.gov.au] Ultrasound Transfer - Patient: Taylor L,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-08,08:09:44,[Assigned: jason.quinn2@sa.gov.au] X-Ray Transfer Request - Patient: Davis T,jason.quinn2@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-08,12:41:19,[Assigned: diana.wonderwoman@sa.gov.au] CT Scan Transfer Request - Patient: Young E,diana.wonderwoman@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-08,14:48:42,[Assigned: brian.shaw@sa.gov.au] Pediatric CT Transfer - Patient: Davis T,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-08,12:22:58,[Assigned: betty.spaghetti@sa.gov.au] MRI Transfer - Patient: Johnson R,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-08,13:48:07,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Jones P,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,12:52:12,[Assigned: john.drousas@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,john.drousas@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-08,14:14:12,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Smith J,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-08,08:46:34,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Adams K,stella.artois@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-08,12:49:54,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Green A,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-08,15:31:20,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
+2025-12-08,15:41:35,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Young E,stella.artois@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-08,12:44:39,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,frank.beans@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-08,09:51:51,[Assigned: betty.spaghetti@sa.gov.au] Ultrasound Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
+2025-12-08,08:17:38,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Moore A,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-08,10:14:21,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Walker D,brian.shaw@sa.gov.au,bone.density@sa.gov.au
+2025-12-08,15:06:38,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Green A,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,16:26:02,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Adams K,frank.beans@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-08,09:53:35,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
+2025-12-08,11:31:57,[Assigned: diana.wonderwoman@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Brown M,diana.wonderwoman@sa.gov.au,bone.density@sa.gov.au
+2025-12-08,14:01:26,[Assigned: john.drousas@sa.gov.au] Pediatric CT Transfer - Patient: Hill C,john.drousas@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-08,11:45:10,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Davis T,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,08:41:35,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Lee H,max.power@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,11:35:34,[Assigned: brian.shaw@sa.gov.au] Mammography Transfer - Patient: Adams K,brian.shaw@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,15:49:09,[Assigned: stella.artois@sa.gov.au] Mammography Transfer - Patient: Scott R,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-08,11:48:50,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Taylor L,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,12:03:47,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: King S,brian.shaw@sa.gov.au,bone.density@sa.gov.au
+2025-12-08,08:35:12,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Wilson S,diana.wonderwoman@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,13:59:08,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Green A,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-08,09:13:33,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-08,13:05:45,[Assigned: stella.artois@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Johnson R,stella.artois@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-08,15:53:12,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Young E,max.power@sa.gov.au,breast.screen@sa.gov.au
+2025-12-08,08:00:12,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Scott R,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-08,10:49:08,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Johnson R,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-08,08:12:13,[Assigned: betty.spaghetti@sa.gov.au] CT Scan Transfer Request - Patient: Smith J,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,10:28:09,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Thomas N,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
+2025-12-08,08:50:35,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Williams K,betty.spaghetti@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-08,07:50:18,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Taylor L,tony.baloney@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-08,09:01:51,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: Brown M,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-08,07:19:35,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Allen W,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,10:12:41,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Hill C,max.power@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,10:14:16,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Thomas N,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-08,08:26:24,[Assigned: max.power@sa.gov.au] Cardiac Imaging Transfer - Patient: Smith J,max.power@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-08,13:29:06,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Scott R,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-08,07:30:34,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Scott R,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-08,08:03:24,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Hill C,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-08,14:10:42,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Moore A,betty.spaghetti@sa.gov.au,breast.screen@sa.gov.au
+2025-12-08,10:41:10,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Martin B,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,10:23:54,[Assigned: brian.shaw@sa.gov.au] X-Ray Transfer Request - Patient: Jones P,brian.shaw@sa.gov.au,central.imaging@sa.gov.au
+2025-12-08,07:14:19,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Jones P,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-09,09:25:29,[Assigned: betty.spaghetti@sa.gov.au] Mammography Transfer - Patient: Williams K,betty.spaghetti@sa.gov.au,central.imaging@sa.gov.au
+2025-12-09,12:18:58,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Williams K,frank.beans@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-09,14:36:07,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Davis T,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-09,10:26:53,[Assigned: stella.artois@sa.gov.au] X-Ray Transfer Request - Patient: Martin B,stella.artois@sa.gov.au,breast.screen@sa.gov.au
+2025-12-09,13:27:57,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Lee H,frank.beans@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-09,09:32:02,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Wright J,brian.shaw@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-09,09:11:22,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Thomas N,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-09,12:46:37,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Green A,max.power@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-09,12:01:46,[Assigned: jason.quinn2@sa.gov.au] Ultrasound Transfer - Patient: Walker D,jason.quinn2@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-09,11:48:06,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Young E,chuck.norris@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-09,09:26:22,[Assigned: frank.beans@sa.gov.au] RAH Emergency US Transfer - Patient: Allen W,frank.beans@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,08:25:05,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Wilson S,brian.shaw@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-09,15:21:46,[Assigned: chuck.norris@sa.gov.au] Mammography Transfer - Patient: Brown M,chuck.norris@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-09,08:37:07,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Adams K,brian.shaw@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,15:54:50,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Baker P,betty.spaghetti@sa.gov.au,bone.density@sa.gov.au
+2025-12-09,11:25:52,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Davis T,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-09,13:41:37,[Assigned: diana.wonderwoman@sa.gov.au] MRI Transfer - Patient: Hill C,diana.wonderwoman@sa.gov.au,central.imaging@sa.gov.au
+2025-12-09,12:49:08,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Wright J,stella.artois@sa.gov.au,breast.screen@sa.gov.au
+2025-12-09,10:26:28,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Hill C,max.power@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-09,11:47:14,[Assigned: chuck.norris@sa.gov.au] Pediatric CT Transfer - Patient: Wright J,chuck.norris@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,12:04:27,[Assigned: jason.quinn2@sa.gov.au] Pediatric CT Transfer - Patient: Lee H,jason.quinn2@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-09,09:53:26,[Assigned: jason.quinn2@sa.gov.au] X-Ray Transfer Request - Patient: Wilson S,jason.quinn2@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-09,09:59:35,[Assigned: frank.beans@sa.gov.au] Mammography Transfer - Patient: Johnson R,frank.beans@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-09,13:37:55,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Hall G,betty.spaghetti@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-09,10:38:10,[Assigned: john.drousas@sa.gov.au] CT Scan Transfer Request - Patient: Hill C,john.drousas@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-09,12:37:34,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Allen W,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-09,15:42:39,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Taylor L,max.power@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-09,12:28:06,[Assigned: betty.spaghetti@sa.gov.au] RAH Emergency US Transfer - Patient: Moore A,betty.spaghetti@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-09,15:18:12,[Assigned: chuck.norris@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Martin B,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-09,12:09:30,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Lopez M,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-09,08:06:09,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Allen W,diana.wonderwoman@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-09,14:37:28,[Assigned: diana.wonderwoman@sa.gov.au] Mammography Transfer - Patient: Scott R,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,07:28:04,[Assigned: brian.shaw@sa.gov.au] Ultrasound Transfer - Patient: Hill C,brian.shaw@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-09,07:07:21,[Assigned: tony.baloney@sa.gov.au] CT Scan Transfer Request - Patient: Green A,tony.baloney@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-09,14:25:18,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Baker P,betty.spaghetti@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-09,11:50:32,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Baker P,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-09,10:11:45,[Assigned: betty.spaghetti@sa.gov.au] X-Ray Transfer Request - Patient: Brown M,betty.spaghetti@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-09,11:18:42,[Assigned: max.power@sa.gov.au] CT Scan Transfer Request - Patient: Jones P,max.power@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-09,12:54:32,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Brown M,tony.baloney@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-09,09:02:30,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,10:34:42,[Assigned: max.power@sa.gov.au] Bone Density Scan Transfer - Patient: Anderson C,max.power@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-09,07:48:48,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Baker P,max.power@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-09,13:48:08,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Williams K,chuck.norris@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-09,10:18:34,[Assigned: john.drousas@sa.gov.au] X-Ray Transfer Request - Patient: Walker D,john.drousas@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-09,08:31:10,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Young E,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,13:13:35,[Assigned: max.power@sa.gov.au] RAH Emergency US Transfer - Patient: Hill C,max.power@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-10,10:35:26,[Assigned: max.power@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Lopez M,max.power@sa.gov.au,bone.density@sa.gov.au
+2025-12-10,09:02:28,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Davis T,frank.beans@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,09:08:04,[Assigned: chuck.norris@sa.gov.au] X-Ray Transfer Request - Patient: Thomas N,chuck.norris@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-10,10:17:25,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Scott R,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,10:22:20,[Assigned: frank.beans@sa.gov.au] Ultrasound Transfer - Patient: Smith J,frank.beans@sa.gov.au,bone.density@sa.gov.au
+2025-12-10,10:25:55,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Wright J,chuck.norris@sa.gov.au,breast.screen@sa.gov.au
+2025-12-10,13:40:30,[Assigned: diana.wonderwoman@sa.gov.au] Pediatric CT Transfer - Patient: Thomas N,diana.wonderwoman@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-10,09:17:04,[Assigned: betty.spaghetti@sa.gov.au] Ultrasound Transfer - Patient: Hill C,betty.spaghetti@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-10,11:26:56,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Baker P,frank.beans@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-10,10:11:32,[Assigned: tony.baloney@sa.gov.au] Mammography Transfer - Patient: Wilson S,tony.baloney@sa.gov.au,qeh.radiology@sa.gov.au
+2025-12-10,11:05:59,[Assigned: john.drousas@sa.gov.au] Mammography Transfer - Patient: Adams K,john.drousas@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-10,12:27:32,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Wilson S,chuck.norris@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-10,16:41:27,[Assigned: frank.beans@sa.gov.au] Mammography Transfer - Patient: Scott R,frank.beans@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,13:55:02,[Assigned: betty.spaghetti@sa.gov.au] Pediatric CT Transfer - Patient: Scott R,betty.spaghetti@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-10,15:16:02,[Assigned: diana.wonderwoman@sa.gov.au] Ultrasound Transfer - Patient: Johnson R,diana.wonderwoman@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-10,09:55:32,[Assigned: tony.baloney@sa.gov.au] Bone Density Scan Transfer - Patient: Moore A,tony.baloney@sa.gov.au,breast.screen@sa.gov.au
+2025-12-10,10:13:49,[Assigned: brian.shaw@sa.gov.au] Cardiac Imaging Transfer - Patient: Thomas N,brian.shaw@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-10,09:41:28,[Assigned: tony.baloney@sa.gov.au] X-Ray Transfer Request - Patient: Davis T,tony.baloney@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,10:21:38,[Assigned: betty.spaghetti@sa.gov.au] Cardiac Imaging Transfer - Patient: Young E,betty.spaghetti@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,10:26:27,[Assigned: brian.shaw@sa.gov.au] Bone Density Scan Transfer - Patient: Walker D,brian.shaw@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-10,11:38:23,[Assigned: diana.wonderwoman@sa.gov.au] X-Ray Transfer Request - Patient: Williams K,diana.wonderwoman@sa.gov.au,trauma.centre@sa.gov.au
+2025-12-10,11:03:00,[Assigned: tony.baloney@sa.gov.au] RAH Emergency US Transfer - Patient: Young E,tony.baloney@sa.gov.au,bone.density@sa.gov.au
+2025-12-10,10:15:38,[Assigned: jason.quinn2@sa.gov.au] CT Scan Transfer Request - Patient: Wright J,jason.quinn2@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-10,11:52:34,[Assigned: chuck.norris@sa.gov.au] MRI Transfer - Patient: Jones P,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,09:48:30,[Assigned: john.drousas@sa.gov.au] X-Ray Transfer Request - Patient: Allen W,john.drousas@sa.gov.au,breast.screen@sa.gov.au
+2025-12-10,08:43:57,[Assigned: frank.beans@sa.gov.au] Cardiac Imaging Transfer - Patient: Green A,frank.beans@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-10,09:33:30,[Assigned: brian.shaw@sa.gov.au] MRI Transfer - Patient: Anderson C,brian.shaw@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-10,08:25:51,[Assigned: tony.baloney@sa.gov.au] Cardiac Imaging Transfer - Patient: Young E,tony.baloney@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-10,13:28:28,[Assigned: max.power@sa.gov.au] Mammography Transfer - Patient: Adams K,max.power@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,07:57:36,[Assigned: brian.shaw@sa.gov.au] RAH Emergency US Transfer - Patient: Davis T,brian.shaw@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,11:50:44,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Green A,max.power@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-10,12:14:26,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: Adams K,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-10,16:28:38,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Hall G,max.power@sa.gov.au,mfm.unit@sa.gov.au
+2025-12-10,12:20:44,[Assigned: chuck.norris@sa.gov.au] RAH Emergency US Transfer - Patient: Walker D,chuck.norris@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-10,07:12:31,[Assigned: max.power@sa.gov.au] Pediatric CT Transfer - Patient: Lopez M,max.power@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-10,16:35:00,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Wilson S,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-10,09:18:32,[Assigned: max.power@sa.gov.au] MRI Transfer - Patient: Lee H,max.power@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-10,11:25:30,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: Lee H,chuck.norris@sa.gov.au,lyell.imaging@sa.gov.au
+2025-12-10,08:42:17,[Assigned: jason.quinn2@sa.gov.au] Bone Density Scan Transfer - Patient: Walker D,jason.quinn2@sa.gov.au,rah.emergency@sa.gov.au
+2025-12-10,11:10:15,[Assigned: stella.artois@sa.gov.au] CT Scan Transfer Request - Patient: Scott R,stella.artois@sa.gov.au,bone.density@sa.gov.au
+2025-12-10,07:01:03,[Assigned: betty.spaghetti@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Baker P,betty.spaghetti@sa.gov.au,breast.screen@sa.gov.au
+2025-12-10,10:32:25,[Assigned: max.power@sa.gov.au] X-Ray Transfer Request - Patient: Jones P,max.power@sa.gov.au,modbury.radiology@sa.gov.au
+2025-12-10,11:49:39,[Assigned: chuck.norris@sa.gov.au] Ultrasound Transfer - Patient: King S,chuck.norris@sa.gov.au,central.imaging@sa.gov.au
+2025-12-10,10:50:41,[Assigned: stella.artois@sa.gov.au] RAH Emergency US Transfer - Patient: Baker P,stella.artois@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-10,14:40:19,[Assigned: stella.artois@sa.gov.au] MRI Transfer - Patient: Williams K,stella.artois@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,07:42:10,[Assigned: chuck.norris@sa.gov.au] CT Scan Transfer Request - Patient: Hill C,chuck.norris@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-10,12:33:23,[Assigned: jason.quinn2@sa.gov.au] MRI Transfer - Patient: King S,jason.quinn2@sa.gov.au,private.clinic@adelaide.com.au
+2025-12-10,11:57:51,[Assigned: chuck.norris@sa.gov.au] Bone Density Scan Transfer - Patient: Davis T,chuck.norris@sa.gov.au,dental.imaging@sa.gov.au
+2025-12-10,09:40:30,[Assigned: jason.quinn2@sa.gov.au] Jones Radiology Requesting Imaging Transfer - Patient: Anderson C,jason.quinn2@sa.gov.au,jones.radiology@hospital.com.au
+2025-12-10,17:48:15,[Assigned: frank.beans@sa.gov.au] Bone Density Scan Transfer - Patient: Taylor L,frank.beans@sa.gov.au,wch.imaging@sa.gov.au
+2025-12-10,11:04:17,[Assigned: chuck.norris@sa.gov.au] Cardiac Imaging Transfer - Patient: Lopez M,chuck.norris@sa.gov.au,flinders.imaging@sa.gov.au
+2025-12-10,09:39:38,[Assigned: frank.beans@sa.gov.au] Pediatric CT Transfer - Patient: Taylor L,frank.beans@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-10,10:14:03,[Assigned: tony.baloney@sa.gov.au] Ultrasound Transfer - Patient: Adams K,tony.baloney@sa.gov.au,rah.cardiology@sa.gov.au
+2025-12-10,11:57:21,[Assigned: diana.wonderwoman@sa.gov.au] Bone Density Scan Transfer - Patient: Williams K,diana.wonderwoman@sa.gov.au,private.clinic@adelaide.com.au

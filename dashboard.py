@@ -454,15 +454,31 @@ if not df_today.empty:
         assignment_data = df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].value_counts().reset_index()
         assignment_data.columns = ['Staff', 'Assignments']
         
-        # Create horizontal bar chart with Plotly
+        # Unique colors for each staff member (vibrant and distinct)
+        staff_colors = {
+            'brian.shaw@sa.gov.au': '#667eea',        # Purple
+            'jason.quinn2@sa.gov.au': '#f093fb',      # Pink
+            'john.drousas@sa.gov.au': '#ff6b6b',      # Red (slacker alert!)
+            'betty.spaghetti@sa.gov.au': '#feca57',   # Yellow
+            'chuck.norris@sa.gov.au': '#48dbfb',      # Cyan
+            'diana.wonderwoman@sa.gov.au': '#ff9ff3', # Hot Pink
+            'tony.baloney@sa.gov.au': '#54a0ff',      # Blue
+            'frank.beans@sa.gov.au': '#00d2d3',       # Teal
+            'stella.artois@sa.gov.au': '#5f27cd',     # Deep Purple
+            'max.power@sa.gov.au': '#ee5a6f'          # Coral
+        }
+        
+        # Map colors to staff in the data
+        colors = [staff_colors.get(email, '#888888') for email in assignment_data['Staff']]
+        
+        # Create horizontal bar chart with unique colors
         fig = go.Figure()
         fig.add_trace(go.Bar(
             y=assignment_data['Staff'],
             x=assignment_data['Assignments'],
             orientation='h',
             marker=dict(
-                color=assignment_data['Assignments'],
-                colorscale='Viridis',
+                color=colors,
                 line=dict(color='rgba(255, 255, 255, 0.2)', width=1)
             ),
             text=assignment_data['Assignments'],
