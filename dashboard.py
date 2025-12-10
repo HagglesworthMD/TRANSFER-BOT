@@ -745,10 +745,14 @@ if not df_today.empty:
     st.markdown("---")
     st.markdown("### 👥 Individual Staff Performance Dashboard")
     
-    # Get all staff members (including those from staff.txt who may not have assignments yet)
+    # Get all staff members (excluding STAFF-REPLY)
     all_staff = set(staff_list)
     assigned_staff = set(df_today[df_today['Assigned To'] != 'STAFF-REPLY']['Assigned To'].unique())
     all_staff.update(assigned_staff)
+    
+    # Explicitly remove STAFF-REPLY if it somehow got included
+    all_staff.discard('STAFF-REPLY')
+    all_staff.discard('staff-reply')
     
     # Calculate KPIs for each staff member
     for staff_email in sorted(all_staff):
