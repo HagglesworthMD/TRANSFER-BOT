@@ -31,108 +31,129 @@ if not DEMO_MODE:
         st.session_state.last_refresh = time.time()
         st.rerun()
 
+# ==================== THEME TOGGLE ====================
+if 'theme' not in st.session_state:
+    st.session_state.theme = 'dark'  # Default to dark mode
+
 # ==================== CUSTOM CSS ====================
-st.markdown("""
+# Theme colors
+if st.session_state.theme == 'dark':
+    bg_gradient = "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)"
+    text_color = "#ffffff"
+    card_bg = "rgba(255, 255, 255, 0.05)"
+    border_color = "rgba(255, 255, 255, 0.1)"
+    hover_bg = "rgba(255, 255, 255, 0.08)"
+else:  # light mode
+    bg_gradient = "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)"
+    text_color = "#1a202c"
+    card_bg = "rgba(255, 255, 255, 0.9)"
+    border_color = "rgba(0, 0, 0, 0.1)"
+    hover_bg = "rgba(0, 0, 0, 0.05)"
+
+st.markdown(f"""
 <style>
     /* Import Modern Font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
     
     /* Global Styles */
-    * {
+    * {{
         font-family: 'Inter', sans-serif;
-    }
+    }}
     
     /* Main Background */
-    .stApp {
-        background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-        color: #ffffff;
-    }
+    .stApp {{
+        background: {bg_gradient};
+        color: {text_color};
+    }}
     
     /* Header Styling */
-    h1, h2, h3 {
-        color: #ffffff !important;
+    h1, h2, h3 {{
+        color: {text_color} !important;
         font-weight: 700 !important;
         letter-spacing: -0.5px;
-    }
+    }}
+    
+    /* Fix button visibility */
+    .stButton > button {{
+        background: {'rgba(102, 126, 234, 0.2)' if st.session_state.theme == 'dark' else 'rgba(102, 126, 234, 0.8)'} !important;
+        color: {text_color} !important;
+        border: 1px solid {'rgba(255, 255, 255, 0.2)' if st.session_state.theme == 'dark' else 'rgba(102, 126, 234, 0.3)'} !important;
+        border-radius: 8px !important;
+        padding: 0.5rem 1rem !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }}
+    
+    .stButton > button:hover {{
+        background: {'rgba(102, 126, 234, 0.4)' if st.session_state.theme == 'dark' else 'rgba(102, 126, 234, 1.0)'} !important;
+        border-color: {'rgba(255, 255, 255, 0.4)' if st.session_state.theme == 'dark' else 'rgba(102, 126, 234, 0.8)'} !important;
+        transform: translateY(-2px);
+    }}
+    
+    /* Download button fix */
+    .stDownloadButton > button {{
+        background: {'rgba(16, 185, 129, 0.2)' if st.session_state.theme == 'dark' else 'rgba(16, 185, 129, 0.8)'} !important;
+        color: {text_color} !important;
+        border: 1px solid {'rgba(16, 185, 129, 0.3)' if st.session_state.theme == 'dark' else 'rgba(16, 185, 129, 0.5)'} !important;
+        border-radius: 8px !important;
+        padding: 0.5rem 1rem !important;
+        font-weight: 600 !important;
+    }}
+    
+    .stDownloadButton > button:hover {{
+        background: {'rgba(16, 185, 129, 0.4)' if st.session_state.theme == 'dark' else 'rgba(16, 185, 129, 1.0)'} !important;
+    }}
     
     /* Metric Cards with Glassmorphism */
-    [data-testid="stMetricValue"] {
+    [data-testid="stMetricValue"] {{
         font-size: 2.5rem !important;
         font-weight: 700 !important;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    }}
     
-    [data-testid="stMetricLabel"] {
+    [data-testid="stMetricLabel"] {{
         font-size: 0.9rem !important;
-        color: #a0aec0 !important;
+        color: {'#a0aec0' if st.session_state.theme == 'dark' else '#4a5568'} !important;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 600 !important;
-    }
+    }}
     
     /* Glass Cards */
-    .glass-card {
-        background: rgba(255, 255, 255, 0.05);
+    .glass-card {{
+        background: {card_bg};
         backdrop-filter: blur(10px);
         border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid {border_color};
         padding: 1.5rem;
         margin: 1rem 0;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    }
-    
-    /* Success/Warning Badges */
-    .status-badge {
-        display: inline-block;
-        padding: 0.4rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin: 0.2rem;
-    }
-    
-    .badge-success {
-        background: rgba(16, 185, 129, 0.2);
-        color: #10b981;
-        border: 1px solid #10b981;
-    }
-    
-    .badge-warning {
-        background: rgba(251, 191, 36, 0.2);
-        color: #fbbf24;
-        border: 1px solid #fbbf24;
-    }
-    
-    .badge-info {
-        background: rgba(59, 130, 246, 0.2);
-        color: #3b82f6;
-        border: 1px solid #3b82f6;
-    }
+    }}
     
     /* Activity Feed */
-    .activity-item {
-        background: rgba(255, 255, 255, 0.03);
+    .activity-item {{
+        background: {card_bg};
         border-left: 3px solid #667eea;
         padding: 0.8rem;
         margin: 0.5rem 0;
         border-radius: 8px;
         transition: all 0.3s ease;
-    }
+    }}
     
-    .activity-item:hover {
-        background: rgba(255, 255, 255, 0.08);
+    .activity-item:hover {{
+        background: {hover_bg};
         transform: translateX(5px);
-    }
+    }}
     
     /* Pulse Animation for Live Indicator */
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
-    }
+    @keyframes pulse {{
+        0%, 100% {{ opacity: 1; }}
+        50% {{ opacity: 0.5; }}
+    }}
     
-    .live-indicator {
+    .live-indicator {{
         display: inline-block;
         width: 10px;
         height: 10px;
@@ -140,24 +161,25 @@ st.markdown("""
         border-radius: 50%;
         margin-right: 8px;
         animation: pulse 2s infinite;
-    }
+    }}
     
     /* DataFrame Styling */
-    .dataframe {
-        background: rgba(255, 255, 255, 0.05) !important;
-        border-radius: 12px !important;
-    }
-    
-    /* Streamlit Elements Override */
-    [data-testid="stDataFrame"] {
-        background: rgba(255, 255, 255, 0.03);
+    [data-testid="stDataFrame"] {{
+        background: {card_bg};
         border-radius: 12px;
         padding: 1rem;
-    }
+    }}
+    
+    /* Expander styling */
+    .streamlit-expanderHeader {{
+        background: {card_bg} !important;
+        color: {text_color} !important;
+        border-radius: 8px !important;
+    }}
     
     /* Hide Streamlit Branding */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
+    #MainMenu {{visibility: hidden;}}
+    footer {{visibility: hidden;}}
     
     /* Stat Number Glow */
     .stat-glow {
@@ -228,7 +250,7 @@ def load_data():
         return None, None, None
 
 # ==================== HEADER ====================
-col1, col2, col3 = st.columns([3, 1, 0.5])
+col1, col2, col3, col4 = st.columns([3, 1, 0.4, 0.4])
 with col1:
     st.markdown("<h1>🚀 SAMI Transfer Bot - Live Operations Center</h1>", unsafe_allow_html=True)
 with col2:
@@ -251,6 +273,13 @@ with col2:
         </div>
         """, unsafe_allow_html=True)
 with col3:
+    st.markdown("<div style='padding-top: 1.5rem;'></div>", unsafe_allow_html=True)
+    # Theme toggle button
+    theme_icon = "🌙" if st.session_state.theme == 'dark' else "☀️"
+    if st.button(theme_icon, help="Toggle Dark/Light Mode", use_container_width=True):
+        st.session_state.theme = 'light' if st.session_state.theme == 'dark' else 'dark'
+        st.rerun()
+with col4:
     st.markdown("<div style='padding-top: 1.5rem;'></div>", unsafe_allow_html=True)
     if st.button("🔄", help="Refresh Now", use_container_width=True):
         st.rerun()
