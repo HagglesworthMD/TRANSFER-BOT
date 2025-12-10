@@ -558,8 +558,9 @@ if not df_today.empty:
         st.markdown("### 🎯 System Status")
         
         # Calculate next in rotation
-        next_idx = roster_state.get('index', 0) % len(staff_list) if staff_list else 0
+        next_idx = roster_state.get('current_index', 0) % len(staff_list) if staff_list else 0
         next_staff = staff_list[next_idx] if staff_list else "N/A"
+        total_processed = roster_state.get('total_processed', len(df[df['Assigned To'] != 'completed']))
         
         st.markdown(f"""
         <div class='glass-card'>
@@ -568,7 +569,7 @@ if not df_today.empty:
             <p style='font-size: 1.2rem; font-weight: 600; color: #10b981;'>{next_staff.split('@')[0]}</p>
             <hr style='border-color: rgba(255,255,255,0.1);'>
             <p style='font-size: 0.9rem; color: #a0aec0;'>Total Processed:</p>
-            <p style='font-size: 1.5rem; font-weight: 700; color: #667eea;'>{roster_state.get('index', 0)}</p>
+            <p style='font-size: 1.5rem; font-weight: 700; color: #667eea;'>{total_processed}</p>
         </div>
         """, unsafe_allow_html=True)
         
