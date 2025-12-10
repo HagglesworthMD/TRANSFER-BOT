@@ -454,8 +454,6 @@ P.S. Chuck Norris has done {chuck_count} requests today. Just saying.
             if st.button("📧 Email John", use_container_width=True, type="primary"):
                 st.markdown(f'<meta http-equiv="refresh" content="0;url={mailto_link}">', unsafe_allow_html=True)
                 st.success("📧 Opening email client...")
-            
-            st.caption("⚠️ Warning: May cause office laughter")
 
 st.markdown("---")
 
