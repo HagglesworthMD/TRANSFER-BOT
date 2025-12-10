@@ -182,9 +182,9 @@ st.markdown(f"""
     footer {{visibility: hidden;}}
     
     /* Stat Number Glow */
-    .stat-glow {
+    .stat-glow {{
         text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
-    }
+    }}
 </style>
 """, unsafe_allow_html=True)
 
